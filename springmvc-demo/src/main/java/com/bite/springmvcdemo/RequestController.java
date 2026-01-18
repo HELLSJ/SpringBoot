@@ -1,10 +1,9 @@
 package com.bite.springmvcdemo;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.List;
 
 
 @RequestMapping("/request")
@@ -37,5 +36,33 @@ public class RequestController {
     @RequestMapping("/r8")
     public String r8(String[] array){
         return "接收到参数, array: "+ Arrays.toString(array);
+    }
+
+    @RequestMapping("/r9")
+    public String r9(@RequestParam List<String> list){
+        // 接收list需要一个注解，必传参数
+        return "接收到参数, list: "+ list;
+    }
+
+    /**
+     * 接受json
+     * @param student
+     * @return
+     */
+    @RequestMapping("/r10")
+    public String r10(@RequestBody Student student){
+        //把整个请求正文作为一个整体来接收
+        return "接收到参数, student: "+student;
+    }
+
+    /**
+     * 从路径中获取参数
+     * @return
+     */
+
+    @RequestMapping("/article/{articleId}")
+    public String r11(@PathVariable("articleId") Integer articleId){
+        //把整个请求正文作为一个整体来接收
+        return "接收到参数, articleId: "+articleId;
     }
 }
