@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("/request")
 @RestController
 public class RequestController {
-    @RequestMapping("/hello")
+    @RequestMapping(value = "/hello", method = RequestMethod.GET) // 只允许GET请求，不接受POST请求
     public String say(){
         return "hello, Spring MVC";
     }
