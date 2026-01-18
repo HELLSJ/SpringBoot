@@ -1,6 +1,7 @@
 package com.bite.springmvcdemo;
 
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Arrays;
 import java.util.List;
@@ -62,7 +63,17 @@ public class RequestController {
 
     @RequestMapping("/article/{articleId}")
     public String r11(@PathVariable("articleId") Integer articleId){
-        //把整个请求正文作为一个整体来接收
         return "接收到参数, articleId: "+articleId;
+    }
+
+    /**
+     * 上传文件
+     * @param file
+     * @return
+     */
+    @RequestMapping("/r12")
+    public String r12(MultipartFile file){
+        String originalFilename = file.getOriginalFilename();
+        return "接收到参数, 文件名称: "+originalFilename;
     }
 }
