@@ -4,9 +4,7 @@ import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 
@@ -24,6 +22,11 @@ public class SessionController {
         return "获取Cookie";
     }
 
+    /**
+     * spring的方式获取cookie
+     * @param bite
+     * @return
+     */
     @RequestMapping("/getC2")
     public String getCookie2(@CookieValue("bite") String bite){
         return "从Cookie中获得值, bite:"+bite;
@@ -45,4 +48,34 @@ public class SessionController {
         return "从session中获取name："+name;
     }
 
+    /**
+     * spring内置HttpSession
+     * @param session
+     * @return
+     */
+    @RequestMapping("/getSess2")
+    public String getSess2(HttpSession session){
+        String name = (String)session.getAttribute("name");
+        return "从session中获取name："+name;
+    }
+
+    /**
+     * spring再次封装
+     * @param name
+     * @return
+     */
+    @RequestMapping("/getSess3")
+    public String getSess3(@SessionAttribute("name") String name){
+        return "从session中获取name："+name;
+    }
+    @RequestMapping("/getHeader")
+    public String getHeader(HttpServletRequest request){
+        String userAgent = request.getHeader("User-Agent");
+        return "从header中获取信息, userAgent:" + userAgent;
+    }
+
+    @RequestMapping("/getHeader2")
+    public String getHeader2(@RequestHeader("User-Agent") String userAgent){
+        return "从header中获取信息, userAgent:" + userAgent;
+    }
 }
