@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.SessionAttribute;
 @RestController
 public class UserController {
     @RequestMapping("/login")
-    public Boolean login(String userName, String passWord, HttpSession session){
+    public Boolean login(String userName, String password, HttpSession session){
         //校验参数
-        if(StringUtils.hasLength(userName)||!StringUtils.hasLength(passWord)){
+        if(!StringUtils.hasLength(userName)||!StringUtils.hasLength(password)){
             return false;
         }
         //判断密码是否正确，暂时没有数据库，先写死
         //上面已经做了判空的处理，userName不会为null,这是一种习惯
-        if("admin".equals(userName) && "admin".equals(passWord)){
+        if("admin".equals(userName) && "admin".equals(password)){
             //设置session信息
             session.setAttribute("userName", userName);
             return true;
