@@ -13,5 +13,5 @@ public class BookInfo {
     private BigDecimal price;
     private String publishName;
     private Integer status; //1-正常，2-不可借阅
-    private String StatusCN;
+    private String statusCN;
 }
