@@ -1,4 +1,4 @@
-package com.bite.book;
+package com.bite.book.controller;
 
 import jakarta.servlet.http.HttpSession;
 import org.springframework.util.StringUtils;

@@ -1,5 +1,6 @@
-package com.bite.book;
+package com.bite.book.controller;
 
+import com.bite.book.BookInfo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
