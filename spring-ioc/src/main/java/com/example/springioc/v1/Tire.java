@@ -8,3 +8,4 @@ public class Tire {
         System.out.println("tire size:"+size);
     }
 }
+
