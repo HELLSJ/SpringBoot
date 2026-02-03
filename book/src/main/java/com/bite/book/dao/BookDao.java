@@ -1,11 +1,12 @@
 package com.bite.book.dao;
 
 import com.bite.book.BookInfo;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-
+@Component //Spring帮我们管理这个对象 IOC
 public class BookDao {
     public List<BookInfo> mockData(){
         List<BookInfo> bookInfos = new ArrayList<>();
