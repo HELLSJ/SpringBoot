@@ -48,3 +48,4 @@ public class SpringIocApplication {
         bean3.doRepo();
     }
 }
+// Springboot类似于12306，封装了买票还有其他的第三方服务
