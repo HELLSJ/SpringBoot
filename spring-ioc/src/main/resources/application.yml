@@ -1,0 +1,29 @@
+# server.port = 9090
+
+server:
+  port: 9090
+
+mykey: aa
+mykey.key1: bb
+
+string:
+  str1: Hello \n Spring Boot.
+  str2: 'Hello \n Spring Boot.'
+  str3: "Hello \n Spring Boot."
+
+student:
+  id: 1
+  name: Java
+  age: 18
+
+
+
+dbtypes:
+  name:
+    - mysql
+    - sqlserver
+    - db2
+  map:
+    k1: kk1
+    k2: kk2
+    k3: kk3
