@@ -28,14 +28,23 @@ public class CaptchaController {
 
     @RequestMapping("/get")
     public void getCaptcha(HttpSession session, HttpServletResponse response){
+        long t1 = System.currentTimeMillis();
         //定义图形验证码的长和宽
         LineCaptcha lineCaptcha = CaptchaUtil.createLineCaptcha(captchaProperties.getWidth(), captchaProperties.getHeight());
+
+        long t2 = System.currentTimeMillis();
+        System.out.println("get耗时：" + (t2-t1) + "ms");
+        //设置返回类型
+        response.setContentType("image/jpeg");
+        //禁止缓存
+        response.setHeader("Progma","No-cache");
         //图形验证码写出
         try {
             lineCaptcha.write(response.getOutputStream());
             //存储session
             session.setAttribute(captchaProperties.getSession().getKey(), lineCaptcha.getCode());
             session.setAttribute(captchaProperties.getSession().getDate(), new Date());
+            response.getOutputStream().close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

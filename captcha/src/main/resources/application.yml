@@ -2,6 +2,19 @@ spring:
   application:
   name: captcha
 
+logging:
+  level:
+    root: info # 设置日志级别
+  logback:
+    rollingpolicy:
+      max_file_size: 1KB
+#  file:
+#    name: logger/captcha.log 同时配置name，path不生效
+#    path: logger
+
+
+
+
 captcha:
   width: 200
   height: 100
