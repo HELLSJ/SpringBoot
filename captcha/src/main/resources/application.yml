@@ -13,11 +13,9 @@ logging:
 #    path: logger
 
 
-
-
 captcha:
   width: 200
   height: 100
   session:
     key: captcha_session_key
-    date: captcah_session_date
+    date: captcha_session_date
