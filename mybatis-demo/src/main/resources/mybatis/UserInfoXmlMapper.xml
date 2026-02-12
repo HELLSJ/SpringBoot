@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.mybatisdemo.mapper.UserInfoXmlMapper">
+
+
+    <resultMap id="BaseMap" type="com.example.mybatisdemo.model.UserInfo">
+        <id column="id" property="id"></id>
+        <result column="delete_flag" property="deleteFlag"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="update_time" property="updateTime"></result>
+    </resultMap>
+
+    <sql id="selectAll">
+        select * from userinfo
+    </sql>
+
+    <sql id="testUserName">
+    <if test="username!=null">
+        username,
+    </if>
+    </sql>
+
     <insert id="insert">
         insert into userinfo (username, password, age, gender)
         values (#{username}, #{password}, #{age}, #{gender})
     </insert>
+
+    <delete id="delete">
+        delete from userinfo where id = #{id}
+    </delete>
+
+    <update id="update">
+        update userinfo set password = #{password} where id =#{id}
+    </update>
+
+    <select id="selectAllUser"  resultType="com.example.mybatisdemo.model.UserInfo">
+        <include refid="selectAll"></include>
+    </select>
+
+<!--    指定映射关系-->
+    <select id="selectAllUser2" resultMap="BaseMap">
+        select * from userinfo
+    </select>
+
+    <select id="count" resultType="java.lang.Integer">
+        select count(1) from userinfo
+    </select>
 
 </mapper>
