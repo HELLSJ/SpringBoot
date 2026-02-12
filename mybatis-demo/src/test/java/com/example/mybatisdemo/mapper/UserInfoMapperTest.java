@@ -80,4 +80,18 @@ class UserInfoMapperTest {
         System.out.println(userInfoMapper.selectUserInfos());
     }
 
+    @Test
+    void queryUserListByOrder() {
+        System.out.println(userInfoMapper.queryUserListByOrder("asc"));
+    }
+
+    @Test
+    void queryUserListByOrder1() {
+        System.out.println(userInfoMapper.queryUserListByOrder1("asc"));
+    }
+
+    @Test
+    void queryUserListByOrder2() {
+        System.out.println(userInfoMapper.queryUserListByOrder2("asc"));
+    }
 }

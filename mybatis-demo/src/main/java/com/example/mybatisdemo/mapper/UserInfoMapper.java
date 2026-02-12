@@ -61,5 +61,28 @@ public interface UserInfoMapper {
 
     // 解决方法3见yml文件
 
+    /**
+     * SQL注入
+     */
+    @Select("select * from userinfo where username = #{userName}")
+    UserInfo selectUserByName(String userName);
 
+    @Select("select * from userinfo where username = '${userName}'")
+    UserInfo selectUserByName2(String userName);
+
+    @Select("select * from userinfo where username= '${username}' and password = '${password}'")
+    UserInfo queryUserByNameAndPassword(String username, String password);
+
+    //升序
+    @Select("select * from userinfo order by id #{order}")
+    List<UserInfo> queryUserListByOrder(String order);
+
+    @Select("select * from userinfo order by id ${order}")
+    List<UserInfo> queryUserListByOrder1(String order);
+
+    @Select("select * from userinfo order by id asc")
+    List<UserInfo> queryUserListByOrder2(String order);
+
+    @Select("select * from userinfo where username like CONCAT('%',#{username},'%')")
+    List<UserInfo> queryUserListByLike(String username);
 }
