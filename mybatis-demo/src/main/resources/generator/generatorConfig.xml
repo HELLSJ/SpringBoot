@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
-        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+        "../../../../mybatis-generator-config_1_0.dtd">
+<!--        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd"-->
 <!-- 配置生成器 -->
 <generatorConfiguration>
 
@@ -21,7 +22,7 @@
         </jdbcConnection>
 
         <!-- 生成实体类 -->
-        <javaModelGenerator targetPackage="com.bite.generator.model" targetProject="src/main/java" >
+        <javaModelGenerator targetPackage="com.example.generator.model" targetProject="src/main/java" >
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
