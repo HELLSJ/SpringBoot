@@ -5,5 +5,7 @@ spring:
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis-plus:
-  configuration: # ???? MyBatis??
+  mapper-locations: classpath:mappers/**/*.xml
+  configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.example.mybatisPlusDemo.model

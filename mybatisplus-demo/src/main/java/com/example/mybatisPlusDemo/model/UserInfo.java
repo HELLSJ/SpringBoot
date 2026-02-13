@@ -12,6 +12,7 @@ import java.util.Date;
 public class UserInfo {
     @TableId
     private Integer id;
+//    映射关系
     @TableField("username")
     private String userName;
     private String password;
