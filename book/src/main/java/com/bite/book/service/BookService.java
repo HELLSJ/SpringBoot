@@ -1,5 +1,6 @@
 package com.bite.book.service;
 
+import com.bite.book.mapper.BookMapper;
 import com.bite.book.model.BookInfo;
 import com.bite.book.dao.BookDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,8 @@ import java.util.List;
 public class BookService {
     @Autowired //从Spring中拿到这个对象 DI
     private BookDao bookDao;
+    @Autowired
+    private BookMapper bookMapper;
     public List<BookInfo> getBookList(){
         List<BookInfo> bookInfos = bookDao.mockData();
         for(BookInfo bookInfo: bookInfos){
@@ -20,5 +23,9 @@ public class BookService {
             }
         }
         return bookInfos;
+    }
+
+    public Integer insertBook(BookInfo bookInfo) {
+        return bookMapper.insertBook(bookInfo);
     }
 }
