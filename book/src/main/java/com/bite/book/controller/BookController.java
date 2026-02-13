@@ -1,6 +1,6 @@
 package com.bite.book.controller;
 
-import com.bite.book.BookInfo;
+import com.bite.book.model.BookInfo;
 import com.bite.book.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

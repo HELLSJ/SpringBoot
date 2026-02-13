@@ -1,6 +1,6 @@
 package com.bite.book.service;
 
-import com.bite.book.BookInfo;
+import com.bite.book.model.BookInfo;
 import com.bite.book.dao.BookDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

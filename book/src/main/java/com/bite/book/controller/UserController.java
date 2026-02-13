@@ -19,9 +19,11 @@ public class UserController {
 //            return "";
 //        }
 //        return "密码错误";
-        if(!"admin".equals(userName) || !"admin".equals(password)){
-            return "密码错误";
-        }
+//        if(!"admin".equals(userName) || !"admin".equals(password)){
+//            return "密码错误";
+//        }
+        //根据用户名称，去数据库查询用户信息，如果未查询到，说明用户不存在
+        //如果查询到用户信息，比对密码信息
         session.setAttribute("userName", userName);
         return "";
         //2.验证密码是否正确
