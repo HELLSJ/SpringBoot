@@ -112,4 +112,13 @@
         </set>
         where id =#{id}
     </update>
+
+    <delete id="batchDelete">
+        delete from userinfo
+        where id in
+        <!--        (1, 2, 3 ,4)-->
+        <foreach collection="ids" open="(" close=")" item="id" separator=",">
+            #{id}
+        </foreach>
+    </delete>
 </mapper>

@@ -57,9 +57,9 @@ class UserInfoXmlMapperTest {
     @Test
     void insertByCondtion() {
         UserInfo userInfo = new UserInfo();
-        userInfo.setUsername("zhaoliu444");
+        userInfo.setUsername("zhaoliu423");
         userInfo.setPassword("zhaoliu444");
-        userInfo.setAge(12);
+        userInfo.setAge(15);
 //        userInfo.setGender(1);
         userInfoXmlMapper.insertByCondtion(userInfo);
     }
@@ -83,10 +83,10 @@ class UserInfoXmlMapperTest {
 //        userInfo.setAge(18);
         System.out.println(userInfoXmlMapper.updateByCondition(userInfo));
     }
-//
-//    @Test
-//    void batchDelete() {
-//        List<Integer> ids = Arrays.asList(new Integer[]{22,23,24,25});
-//        userInfoXmlMapper.batchDelete(ids);
-//    }
+
+    @Test
+    void batchDelete() {
+        List<Integer> ids = Arrays.asList(new Integer[]{7,8,9,10});
+        userInfoXmlMapper.batchDelete(ids);
+    }
 }
