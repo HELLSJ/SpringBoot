@@ -70,7 +70,7 @@
             success: function (messageInfos) {
                 var finalHtml = "";
                 for (var message of messageInfos) {
-                    finalHtml += '<div>' + message.from + ' 对 ' + message.to + ' 说: ' + message.message + '</div>';
+                    finalHtml += '<div>' + message.from + ' 对 ' + message.to + ' 说: ' + message.say + '</div>';
                 }
                 $(".container").append(finalHtml);
 
@@ -93,7 +93,7 @@
                 data: {
                     from: $('#from').val(),
                     to: $('#to').val(),
-                    message: $('#say').val()
+                    say: $('#say').val()
                 },
                 success: function (result) {
                     if (result) {
