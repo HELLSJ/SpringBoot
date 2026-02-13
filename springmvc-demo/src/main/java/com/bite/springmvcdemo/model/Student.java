@@ -1,4 +1,4 @@
-package com.bite.springmvcdemo;
+package com.bite.springmvcdemo.model;
 
 public class Student {
     private Integer id;

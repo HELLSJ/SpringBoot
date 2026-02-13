@@ -1,4 +1,4 @@
-package com.bite.springmvcdemo;
+package com.bite.springmvcdemo.controller;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;

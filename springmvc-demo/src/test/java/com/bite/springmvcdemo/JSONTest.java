@@ -1,5 +1,6 @@
 package com.bite.springmvcdemo;
 
+import com.bite.springmvcdemo.model.Student;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

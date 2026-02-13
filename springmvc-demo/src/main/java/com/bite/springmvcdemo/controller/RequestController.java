@@ -1,5 +1,6 @@
-package com.bite.springmvcdemo;
+package com.bite.springmvcdemo.controller;
 
+import com.bite.springmvcdemo.model.Student;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 

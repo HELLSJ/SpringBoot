@@ -1,17 +1,20 @@
-package com.bite.springmvcdemo;
+package com.bite.springmvcdemo.controller;
 
-
+import com.bite.springmvcdemo.model.MessageInfo;
+import com.bite.springmvcdemo.service.MessageService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 @RequestMapping("/message")
 @RestController
 
 public class MessageController {
-    private List<MessageInfo> messageInfos = new ArrayList<>();
+    @Autowired
+    private MessageService messageService;
+
     @RequestMapping("/publish")
     public Boolean publish(MessageInfo messageInfo){
         //1.参数校验
@@ -21,14 +24,19 @@ public class MessageController {
                 || !StringUtils.hasLength(messageInfo.getSay())){
             return false;
         }
-        messageInfos.add(messageInfo);
-        return true;
+//        messageInfos.add(messageInfo);
+        Integer result = messageService.publishMessage(messageInfo);
+        if(result>0){
+            return true;
+        }
+
+        return false;
     }
     /**
      * 获取留言信息
      */
     @RequestMapping("/getList")
     public List<MessageInfo> getList(){
-        return messageInfos;
+        return messageService.getMessageList();
     }
 }
