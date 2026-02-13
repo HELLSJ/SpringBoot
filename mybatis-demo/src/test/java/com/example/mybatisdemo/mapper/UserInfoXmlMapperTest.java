@@ -53,35 +53,36 @@ class UserInfoXmlMapperTest {
     void selectAllUser2() {
         System.out.println(userInfoXmlMapper.selectAllUser2());
     }
-//
-//    @Test
-//    void insertByCondtion() {
-//        UserInfo userInfo = new UserInfo();
-//        userInfo.setUsername("zhaoliu444");
-//        userInfo.setPassword("zhaoliu444");
-//        userInfo.setAge(12);
-////        userInfo.setGender(1);
-//        userInfoXmlMapper.insertByCondtion(userInfo);
-//    }
-//
-//    @Test
-//    void queryUserByCondition() {
-//        UserInfo userInfo = new UserInfo();
-////        userInfo.setAge(12);
-////        userInfo.setGender(0);
-////        userInfo.setDeleteFlag(0);
-//        System.out.println(userInfoXmlMapper.queryUserByCondition(userInfo));
-//    }
-//
-//    @Test
-//    void updateByCondition() {
-//        UserInfo userInfo = new UserInfo();
-//        userInfo.setId(21);
-////        userInfo.setPassword("11223");
-//        userInfo.setGender(3);
-////        userInfo.setAge(18);
-//        System.out.println(userInfoXmlMapper.updateByCondition(userInfo));
-//    }
+
+    @Test
+    void insertByCondtion() {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setUsername("zhaoliu444");
+        userInfo.setPassword("zhaoliu444");
+        userInfo.setAge(12);
+//        userInfo.setGender(1);
+        userInfoXmlMapper.insertByCondtion(userInfo);
+    }
+
+    @Test
+    void queryUserByCondition() {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setAge(12);
+        userInfo.setGender(1);
+        userInfo.setDeleteFlag(0);
+        System.out.println(userInfoXmlMapper.queryUserByCondition(userInfo));
+    }
+
+
+    @Test
+    void updateByCondition() {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setId(5);
+        userInfo.setPassword("12321414");
+        userInfo.setGender(3);
+//        userInfo.setAge(18);
+        System.out.println(userInfoXmlMapper.updateByCondition(userInfo));
+    }
 //
 //    @Test
 //    void batchDelete() {

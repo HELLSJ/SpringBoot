@@ -46,4 +46,70 @@
         select count(1) from userinfo
     </select>
 
+    <!--动态sql-->
+    <insert id="insertByCondtion">
+        insert into userinfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="username!=null">
+                username,  <!--逗号放后边-->
+            </if>
+            <if test="password !=null">
+                password,
+            </if>
+            <if test="age !=null">
+                age,
+            </if>
+            <if test="gender != null">
+                gender
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="username!=null">
+                #{username},
+            </if>
+            <if test="password !=null">
+                #{password},
+            </if>
+            <if test="age !=null">
+                #{age},
+            </if>
+            <if test="gender !=null">
+                #{gender}
+            </if>
+        </trim>
+    </insert>
+
+    <select id="queryUserByCondition" resultType="com.example.mybatisdemo.model.UserInfo">
+        select * from userinfo
+<!--         <where>生成where关键字并且去除最前方的and-->
+
+        <where>
+            <if test="age !=null">
+                age = #{age}
+            </if>
+            <if test="gender !=null">
+                and gender = #{gender}
+            </if>
+            <if test="deleteFlag !=null">
+                and delete_flag = #{deleteFlag}
+            </if>
+        </where>
+    </select>
+
+    <update id="updateByCondition">
+        update userinfo
+        <set>
+            <if test="password!=null">
+                password = #{password},
+            </if>
+            <if test="age !=null">
+                age = #{age},
+            </if>
+            <if test="gender !=null">
+                gender = #{gender}
+            </if>
+        </set>
+        where id =#{id}
+    </update>
 </mapper>

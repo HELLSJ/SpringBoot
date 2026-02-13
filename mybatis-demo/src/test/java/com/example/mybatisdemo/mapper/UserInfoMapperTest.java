@@ -94,4 +94,19 @@ class UserInfoMapperTest {
     void queryUserListByOrder2() {
         System.out.println(userInfoMapper.queryUserListByOrder2("asc"));
     }
+
+    @Test
+    void insertByCondtion() {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setUsername("zhaoliu555");
+        userInfo.setPassword("zhaoliu555");
+        userInfo.setAge(12);
+//        userInfo.setGender(1);
+        userInfoMapper.insertByCondtion(userInfo);
+    }
+
+    @Test
+    void queryUserListByLike() {
+
+    }
 }
