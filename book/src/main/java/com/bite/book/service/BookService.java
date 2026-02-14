@@ -3,6 +3,7 @@ package com.bite.book.service;
 import com.bite.book.mapper.BookMapper;
 import com.bite.book.model.BookInfo;
 import com.bite.book.dao.BookDao;
+import com.bite.book.model.PageRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -27,5 +28,9 @@ public class BookService {
 
     public Integer insertBook(BookInfo bookInfo) {
         return bookMapper.insertBook(bookInfo);
+    }
+
+    public List<BookInfo> getBookListByType(PageRequest pageRequest) {
+        return bookMapper.queryBookByPage(pageRequest.getOffset(), pageRequest.getPageSize());
     }
 }

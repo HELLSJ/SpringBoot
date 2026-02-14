@@ -1,6 +1,7 @@
 package com.bite.book.controller;
 
 import com.bite.book.model.BookInfo;
+import com.bite.book.model.PageRequest;
 import com.bite.book.service.BookService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +48,12 @@ public class BookController {
             return e.getMessage();
         }
         return "添加失败";
-
+    }
+    /**
+     * 查询图书列表
+     */
+    @RequestMapping("/getBookListByType")
+    public List<BookInfo> getBookListByType(PageRequest pageRequest){
+        return bookService.getBookListByType(pageRequest);
     }
 }
