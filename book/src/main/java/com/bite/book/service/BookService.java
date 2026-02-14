@@ -31,7 +31,7 @@ public class BookService {
         return bookMapper.insertBook(bookInfo);
     }
 
-    public PageResult<BookInfo> getBookListByType(PageRequest pageRequest) {
+    public PageResult<BookInfo> getBookListByPage(PageRequest pageRequest) {
         //1.获取总记录数
         Integer count = bookMapper.count();
         //2.获取当前页的记录

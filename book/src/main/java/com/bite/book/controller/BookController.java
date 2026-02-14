@@ -53,8 +53,8 @@ public class BookController {
     /**
      * 查询图书列表
      */
-    @RequestMapping("/getBookListByType")
-    public PageResult<BookInfo> getBookListByType(PageRequest pageRequest){
-        return bookService.getBookListByType(pageRequest);
+    @RequestMapping("/getBookListByPage")
+    public PageResult<BookInfo> getBookListByPage(PageRequest pageRequest){
+        return bookService.getBookListByPage(pageRequest);
     }
 }
