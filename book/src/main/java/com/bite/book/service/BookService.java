@@ -4,6 +4,7 @@ import com.bite.book.mapper.BookMapper;
 import com.bite.book.model.BookInfo;
 import com.bite.book.dao.BookDao;
 import com.bite.book.model.PageRequest;
+import com.bite.book.model.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -30,7 +31,11 @@ public class BookService {
         return bookMapper.insertBook(bookInfo);
     }
 
-    public List<BookInfo> getBookListByType(PageRequest pageRequest) {
-        return bookMapper.queryBookByPage(pageRequest.getOffset(), pageRequest.getPageSize());
+    public PageResult<BookInfo> getBookListByType(PageRequest pageRequest) {
+        //1.获取总记录数
+        Integer count = bookMapper.count();
+        //2.获取当前页的记录
+        List<BookInfo> bookInfos = bookMapper.queryBookByPage(pageRequest.getOffset(), pageRequest.getPageSize());
+        return new PageResult<>(bookInfos,count);
     }
 }

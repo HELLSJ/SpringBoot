@@ -18,4 +18,6 @@ public interface BookMapper {
 
     @Select("select * from book_info limit #{offset}, #{limit}")
     List<BookInfo> queryBookByPage(Integer offset, Integer limit);
+    @Select("select count(1) from book_info")
+    Integer count();
 }
