@@ -1,5 +1,6 @@
 package com.bite.book.service;
 
+import com.bite.book.enums.BookStatus;
 import com.bite.book.mapper.BookMapper;
 import com.bite.book.model.BookInfo;
 import com.bite.book.dao.BookDao;
@@ -11,16 +12,18 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 @Component //Spring帮我们管理这个对象 IOC
 public class BookService {
-    @Autowired //从Spring中拿到这个对象 DI
+    //从Spring中拿到这个对象 DI
+    @Autowired
     private BookDao bookDao;
     @Autowired
     private BookMapper bookMapper;
-    public List<BookInfo> getBookList(){
+
+    public List<BookInfo> getBookList() {
         List<BookInfo> bookInfos = bookDao.mockData();
-        for(BookInfo bookInfo: bookInfos){
-            if(bookInfo.getStatus() == 2){
+        for (BookInfo bookInfo : bookInfos) {
+            if (bookInfo.getStatus() == 2) {
                 bookInfo.setStatusCN("不可借阅");
-            }else{
+            } else {
                 bookInfo.setStatusCN("可借阅");
             }
         }
@@ -36,6 +39,11 @@ public class BookService {
         Integer count = bookMapper.count();
         //2.获取当前页的记录
         List<BookInfo> bookInfos = bookMapper.queryBookByPage(pageRequest.getOffset(), pageRequest.getPageSize());
-        return new PageResult<>(bookInfos,count);
+        //3.处理状态
+        //4.状态 0-删除，1-可借阅，2-不可借阅
+        for (BookInfo bookInfo : bookInfos) {
+            bookInfo.setStatusCN(BookStatus.getDescByCode(bookInfo.getStatus()).getDesc());
+        }
+        return new PageResult<>(bookInfos, count, pageRequest);
     }
 }
