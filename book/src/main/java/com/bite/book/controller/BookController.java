@@ -67,12 +67,15 @@ public class BookController {
     /**
      * 更新图书
      */
-    @RequestMapping("/updateBookById")
-    public String updateBookById(BookInfo bookInfo){
+    @RequestMapping("/updateBook")
+    public String updateBook(BookInfo bookInfo){
         log.info("更新图书，bookInfo: {}", bookInfo);
         try{
             Integer result = bookService.updateBookById(bookInfo);
-            return "";
+            if(result > 0){
+                return "";
+            }
+            return "内部错误";
         }catch(Exception e){
             log.error("更新图书失败：e", e);
             return "更新图书失败："+ e.getMessage();
