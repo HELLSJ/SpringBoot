@@ -3,7 +3,7 @@ package com.bite.book.service;
 import com.bite.book.enums.BookStatus;
 import com.bite.book.mapper.BookMapper;
 import com.bite.book.model.BookInfo;
-import com.bite.book.dao.BookDao;
+
 import com.bite.book.model.PageRequest;
 import com.bite.book.model.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,23 +12,25 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 @Component //Spring帮我们管理这个对象 IOC
 public class BookService {
-    //从Spring中拿到这个对象 DI
-    @Autowired
-    private BookDao bookDao;
+
     @Autowired
     private BookMapper bookMapper;
 
-    public List<BookInfo> getBookList() {
-        List<BookInfo> bookInfos = bookDao.mockData();
-        for (BookInfo bookInfo : bookInfos) {
-            if (bookInfo.getStatus() == 2) {
-                bookInfo.setStatusCN("不可借阅");
-            } else {
-                bookInfo.setStatusCN("可借阅");
-            }
-        }
-        return bookInfos;
-    }
+    @Deprecated
+    //针对废弃的接口，如果是新项目，可以直接删除
+    //如果是已经在线上运行的项目，不可轻易删除
+    //加上这个注解可以告诉调用方，这个接口不用了
+//    public List<BookInfo> getBookList() {
+//        List<BookInfo> bookInfos = bookDao.mockData();
+//        for (BookInfo bookInfo : bookInfos) {
+//            if (bookInfo.getStatus() == 2) {
+//                bookInfo.setStatusCN("不可借阅");
+//            } else {
+//                bookInfo.setStatusCN("可借阅");
+//            }
+//        }
+//        return bookInfos;
+//    }
 
     public Integer insertBook(BookInfo bookInfo) {
         return bookMapper.insertBook(bookInfo);
@@ -45,5 +47,15 @@ public class BookService {
             bookInfo.setStatusCN(BookStatus.getDescByCode(bookInfo.getStatus()).getDesc());
         }
         return new PageResult<>(bookInfos, count, pageRequest);
+    }
+
+    public BookInfo queryBookById(Integer bookId) {
+        BookInfo bookInfo = bookMapper.queryBookById(bookId);
+        bookInfo.setStatusCN(BookStatus.getDescByCode(bookInfo.getStatus()).getDesc());
+        return bookInfo;
+    }
+
+    public Integer updateBookById(BookInfo bookInfo) {
+        return bookMapper.updateBookById(bookInfo);
     }
 }

@@ -17,12 +17,6 @@ import java.util.List;
 public class BookController {
     @Autowired //从Spring中拿到这个对象 DI
     private BookService bookService;
-    @RequestMapping("/getBookList")
-    public List<BookInfo> getBookList(){
-//        BookService bookService = new BookService();
-
-        return bookService.getBookList();
-    }
     /**
      * 添加图书
      */
@@ -55,6 +49,33 @@ public class BookController {
      */
     @RequestMapping("/getBookListByPage")
     public PageResult<BookInfo> getBookListByPage(PageRequest pageRequest){
+        log.info("查询图书列表，请求参数pageRequest: {}", pageRequest);
         return bookService.getBookListByPage(pageRequest);
+    }
+
+    /**
+     * 查询图书信息
+     * @param bookId
+     * @return
+     */
+    @RequestMapping("/queryBookById")
+    public BookInfo queryBookById(Integer bookId){
+        log.info("根据ID查询图书信息，id:"+bookId);
+        return bookService.queryBookById(bookId);
+    }
+
+    /**
+     * 更新图书
+     */
+    @RequestMapping("/updateBookById")
+    public String updateBookById(BookInfo bookInfo){
+        log.info("更新图书，bookInfo: {}", bookInfo);
+        try{
+            Integer result = bookService.updateBookById(bookInfo);
+            return "";
+        }catch(Exception e){
+            log.error("更新图书失败：e", e);
+            return "更新图书失败："+ e.getMessage();
+        }
     }
 }

@@ -4,6 +4,7 @@ import com.bite.book.model.BookInfo;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
@@ -18,6 +19,13 @@ public interface BookMapper {
 
     @Select("select * from book_info limit #{offset}, #{limit}")
     List<BookInfo> queryBookByPage(Integer offset, Integer limit);
+
     @Select("select count(1) from book_info where status != 0")
     Integer count();
+
+    @Select("select * from book_info where id = #{bookId}")
+    BookInfo queryBookById(Integer bookId);
+
+
+    Integer updateBookById(BookInfo bookInfo);
 }
