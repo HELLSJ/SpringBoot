@@ -9,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -105,7 +106,7 @@ public class BookController {
      * 批量删除
      */
     @RequestMapping("/batchDeleteBook")
-    public String batchDelete(List<Integer> ids){
+    public String batchDelete(@RequestParam List<Integer> ids){
         log.info("批量删除图书，ids: {}", ids);
         Integer result = bookService.batchDeleteBookByIds(ids);
         if(result > 0) {
