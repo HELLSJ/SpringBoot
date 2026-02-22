@@ -3,6 +3,7 @@ package com.bite.book.controller;
 import com.bite.book.model.BookInfo;
 import com.bite.book.model.PageRequest;
 import com.bite.book.model.PageResult;
+import com.bite.book.model.UserInfo;
 import com.bite.book.service.BookService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -80,5 +81,36 @@ public class BookController {
             log.error("更新图书失败：e", e);
             return "更新图书失败："+ e.getMessage();
         }
+    }
+
+    /**
+     * 删除图书
+     */
+    @RequestMapping("/deleteBook")
+    public String deleteBook(Integer bookId){
+        log.info("删除图书，bookId: {}", bookId);
+        try{
+            Integer result = bookService.deleteBook(bookId);
+            if(result > 0){
+                return "";
+            }
+            return "内部错误";
+        }catch(Exception e){
+            log.error("删除图书失败：e", e);
+            return "删除图书失败："+ e.getMessage();
+        }
+    }
+
+    /**
+     * 批量删除
+     */
+    @RequestMapping("/batchDeleteBook")
+    public String batchDelete(List<Integer> ids){
+        log.info("批量删除图书，ids: {}", ids);
+        Integer result = bookService.batchDeleteBookByIds(ids);
+        if(result > 0) {
+            return "";
+        }
+        return "内部错误";
     }
 }
