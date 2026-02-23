@@ -1,10 +1,10 @@
 package com.bite.book.controller;
 
-import com.bite.book.model.BookInfo;
-import com.bite.book.model.PageRequest;
-import com.bite.book.model.PageResult;
-import com.bite.book.model.UserInfo;
+import com.bite.book.constant.Constant;
+import com.bite.book.enums.ResultStatus;
+import com.bite.book.model.*;
 import com.bite.book.service.BookService;
+import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
@@ -50,9 +50,17 @@ public class BookController {
      * 查询图书列表
      */
     @RequestMapping("/getBookListByPage")
-    public PageResult<BookInfo> getBookListByPage(PageRequest pageRequest){
+    public Result<PageResult<BookInfo>> getBookListByPage(PageRequest pageRequest, HttpSession session){
         log.info("查询图书列表，请求参数pageRequest: {}", pageRequest);
-        return bookService.getBookListByPage(pageRequest);
+        //从session中获取用户信息
+        UserInfo loginUserInfo = (UserInfo) session.getAttribute(Constant.USER_SESSION_KEY);
+        if (loginUserInfo==null||loginUserInfo.getId()<0){
+            return Result.nologin();
+        }
+
+        //参数校验
+        PageResult<BookInfo> bookList = bookService.getBookListByPage(pageRequest);
+        return Result.success(bookList);
     }
 
     /**
