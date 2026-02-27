@@ -8,9 +8,10 @@ import com.bite.book.model.PageRequest;
 import com.bite.book.model.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Component //Spring帮我们管理这个对象 IOC
+@Service //Spring帮我们管理这个对象 IOC
 public class BookService {
 
     @Autowired

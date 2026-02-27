@@ -10,8 +10,6 @@ import java.util.List;
 
 @Data
 public class PageResult<T> {
-    private int code; //业务吗200成功，-1失败，-2未登录
-    private String msg;
     private List<T> records;
     private Integer count;
     private PageRequest pageRequest;

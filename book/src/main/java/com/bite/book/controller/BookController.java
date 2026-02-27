@@ -52,12 +52,11 @@ public class BookController {
     @RequestMapping("/getBookListByPage")
     public Result<PageResult<BookInfo>> getBookListByPage(PageRequest pageRequest, HttpSession session){
         log.info("查询图书列表，请求参数pageRequest: {}", pageRequest);
-        //从session中获取用户信息
-        UserInfo loginUserInfo = (UserInfo) session.getAttribute(Constant.USER_SESSION_KEY);
-        if (loginUserInfo==null||loginUserInfo.getId()<0){
-            return Result.nologin();
-        }
-
+//        //从session中获取用户信息
+//        UserInfo loginUserInfo = (UserInfo) session.getAttribute(Constant.USER_SESSION_KEY);
+//        if (loginUserInfo==null||loginUserInfo.getId()<0){
+//            return Result.nologin();
+//        }
         //参数校验
         PageResult<BookInfo> bookList = bookService.getBookListByPage(pageRequest);
         return Result.success(bookList);
