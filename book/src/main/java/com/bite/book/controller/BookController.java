@@ -22,7 +22,7 @@ public class BookController {
     /**
      * 添加图书
      */
-    @RequestMapping("/addBook")
+    @RequestMapping(value = "/addBook", produces = "application/json")
     public String addBook(BookInfo bookInfo){
         //校验参数
         log.info("添加图书，接收到参数：bookInfo {}", bookInfo);
@@ -77,7 +77,7 @@ public class BookController {
     /**
      * 更新图书
      */
-    @RequestMapping("/updateBook")
+    @RequestMapping(value = "/updateBook", produces = "application/json")
     public String updateBook(BookInfo bookInfo){
         log.info("更新图书，bookInfo: {}", bookInfo);
         try{
@@ -100,7 +100,7 @@ public class BookController {
         log.info("删除图书，bookId: {}", bookId);
         Integer result = bookService.deleteBook(bookId);
         if(result > 0){
-            return false;
+            return true;
         }
         return false;
     }
@@ -108,7 +108,7 @@ public class BookController {
     /**
      * 批量删除
      */
-    @RequestMapping("/batchDeleteBook")
+    @RequestMapping(value = "/batchDeleteBook", produces = "application/json")
     public String batchDelete(@RequestParam List<Integer> ids){
         log.info("批量删除图书，ids: {}", ids);
         Integer result = bookService.batchDeleteBookByIds(ids);
