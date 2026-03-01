@@ -1,5 +1,6 @@
 package com.bite.book.controller;
 
+import com.bite.book.model.Result;
 import com.bite.book.model.UserInfo;
 import com.bite.book.service.UserService;
 import jakarta.servlet.http.HttpSession;
@@ -14,11 +15,11 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/login")
-    public String login(String userName, String password, HttpSession session){
+    @RequestMapping(value = "/login", produces = "application/json")
+    public Result login(String userName, String password, HttpSession session){
         //1.校验参数
         if(!StringUtils.hasLength(userName)||!StringUtils.hasLength(password)){
-            return "用户名或者密码为空";
+            return Result.fail("用户或密码为空");
         }
         //模拟校验
 //        if("admin".equals(userName)&&"admin".equals(password)){
@@ -32,14 +33,14 @@ public class UserController {
         //根据用户名称，去数据库查询用户信息，如果未查询到，说明用户不存在
         UserInfo userInfo = userService.getUserInfoByName(userName);
         if(userInfo==null){
-            return "用户不存在";
+            return Result.fail("用户不存在");
         }
         //如果查询到用户信息，校验密码信息
         if(!password.equals(userInfo.getPassword())){
-            return "密码错误";
+            return Result.fail("密码错误");
         }
 
         session.setAttribute("user_session_key", userInfo);
-        return "";
+        return Result.success("");
     }
 }

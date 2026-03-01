@@ -24,7 +24,7 @@ public class Result<T> {
         return result;
     }
 
-    public static Result fail(ResultStatus resultStatus, String msg){
+    public static Result fail(String msg){
         Result result = new Result<>();
         result.setCode(ResultStatus.FAIl);
         result.setErrMsg(msg);

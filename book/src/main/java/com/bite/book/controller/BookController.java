@@ -96,18 +96,13 @@ public class BookController {
      * 删除图书
      */
     @RequestMapping("/deleteBook")
-    public String deleteBook(Integer bookId){
+    public Boolean deleteBook(Integer bookId){
         log.info("删除图书，bookId: {}", bookId);
-        try{
-            Integer result = bookService.deleteBook(bookId);
-            if(result > 0){
-                return "";
-            }
-            return "内部错误";
-        }catch(Exception e){
-            log.error("删除图书失败：e", e);
-            return "删除图书失败："+ e.getMessage();
+        Integer result = bookService.deleteBook(bookId);
+        if(result > 0){
+            return false;
         }
+        return false;
     }
 
     /**
