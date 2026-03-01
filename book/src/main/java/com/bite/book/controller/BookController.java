@@ -71,6 +71,10 @@ public class BookController {
     @RequestMapping("/queryBookById")
     public BookInfo queryBookById(Integer bookId){
         log.info("根据ID查询图书信息，id:"+bookId);
+        long start = System.currentTimeMillis();
+        BookInfo bookInfo = bookService.queryBookById(bookId);
+        long end = System.currentTimeMillis();
+        log.info("queryBookById耗时：" +(end-start) +"ms");
         return bookService.queryBookById(bookId);
     }
 
