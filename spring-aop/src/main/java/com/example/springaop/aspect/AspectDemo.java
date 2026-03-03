@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class AspectDemo {
     @Pointcut("execution(* com.example.springaop.controller..*(..))")
-//    @Pointcut("execution(* com.bite.aop.controller.*.*(..))")
+//    @Pointcut("execution(* com.example.springaop.controller.*.*(..))")
     public void pt(){};
 
     @Before("pt()")

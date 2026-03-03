@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class MyAspectDemo {
-    @Around("@annotation(com.example.springaop.config.MyAspect)")
+    @Around("@annotation(com.example.springaop.config.MyAspect)") //切点表达式声明选择什么注解，around声明这个注解作用的范围
     public Object doAround(ProceedingJoinPoint joinPoint){
         log.info("do around before...");
         Object o = null;
