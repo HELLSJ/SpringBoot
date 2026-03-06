@@ -11,3 +11,84 @@
 2026-03-06T22:35:49.024+08:00  INFO 21856 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-03-06T22:35:49.025+08:00  INFO 21856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-03-06T22:35:49.026+08:00  INFO 21856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-06T23:52:46.684+08:00  INFO 49712 --- [main] c.e.s.mapper.UserInfoMapperTest          : Starting UserInfoMapperTest using Java 17.0.11 with PID 49712 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-06T23:52:46.685+08:00  INFO 49712 --- [main] c.e.s.mapper.UserInfoMapperTest          : No active profile set, falling back to 1 default profile: "default"
+2026-03-06T23:52:48.553+08:00  INFO 49712 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@4a325eb9
+2026-03-06T23:52:48.655+08:00  INFO 49712 --- [main] c.e.s.mapper.UserInfoMapperTest          : Started UserInfoMapperTest in 2.278 seconds (process running for 3.182)
+2026-03-06T23:52:49.300+08:00  INFO 49712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-06T23:52:49.424+08:00  INFO 49712 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39f93225
+2026-03-06T23:52:49.426+08:00  INFO 49712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-06T23:52:49.587+08:00  INFO 49712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-06T23:52:49.595+08:00  INFO 49712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-06T23:54:26.701+08:00  INFO 40888 --- [main] c.e.s.mapper.UserInfoMapperTest          : Starting UserInfoMapperTest using Java 17.0.11 with PID 40888 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-06T23:54:26.702+08:00  INFO 40888 --- [main] c.e.s.mapper.UserInfoMapperTest          : No active profile set, falling back to 1 default profile: "default"
+2026-03-06T23:54:28.517+08:00  INFO 40888 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@ec50f54
+2026-03-06T23:54:28.624+08:00  INFO 40888 --- [main] c.e.s.mapper.UserInfoMapperTest          : Started UserInfoMapperTest in 2.249 seconds (process running for 3.065)
+2026-03-06T23:54:29.235+08:00  INFO 40888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-06T23:54:29.345+08:00  INFO 40888 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e8bccfb
+2026-03-06T23:54:29.346+08:00  INFO 40888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-06T23:54:29.496+08:00  INFO 40888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-06T23:54:29.508+08:00  INFO 40888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-06T23:54:52.922+08:00  INFO 31212 --- [main] c.e.s.mapper.UserInfoMapperTest          : Starting UserInfoMapperTest using Java 17.0.11 with PID 31212 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-06T23:54:52.923+08:00  INFO 31212 --- [main] c.e.s.mapper.UserInfoMapperTest          : No active profile set, falling back to 1 default profile: "default"
+2026-03-06T23:54:54.702+08:00  INFO 31212 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@1654a892
+2026-03-06T23:54:54.800+08:00  INFO 31212 --- [main] c.e.s.mapper.UserInfoMapperTest          : Started UserInfoMapperTest in 2.173 seconds (process running for 2.95)
+2026-03-06T23:54:55.447+08:00  INFO 31212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-06T23:54:55.559+08:00  INFO 31212 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50785f86
+2026-03-06T23:54:55.561+08:00  INFO 31212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-06T23:54:55.619+08:00  INFO 31212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-06T23:54:55.625+08:00  INFO 31212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-06T23:55:28.658+08:00  INFO 28244 --- [main] c.e.s.mapper.UserInfoMapperTest          : Starting UserInfoMapperTest using Java 17.0.11 with PID 28244 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-06T23:55:28.659+08:00  INFO 28244 --- [main] c.e.s.mapper.UserInfoMapperTest          : No active profile set, falling back to 1 default profile: "default"
+2026-03-06T23:55:30.631+08:00  INFO 28244 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@1654a892
+2026-03-06T23:55:30.726+08:00  INFO 28244 --- [main] c.e.s.mapper.UserInfoMapperTest          : Started UserInfoMapperTest in 2.368 seconds (process running for 3.123)
+2026-03-06T23:55:31.336+08:00  INFO 28244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-06T23:55:31.459+08:00  INFO 28244 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e258d3b
+2026-03-06T23:55:31.460+08:00  INFO 28244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-06T23:55:31.511+08:00  INFO 28244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-06T23:55:31.516+08:00  INFO 28244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-06T23:58:11.476+08:00  INFO 48956 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 17.0.11 with PID 48956 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-06T23:58:11.477+08:00  INFO 48956 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-06T23:58:13.235+08:00  INFO 48956 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@6c000e0c
+2026-03-06T23:58:13.314+08:00  INFO 48956 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 2.136 seconds (process running for 2.873)
+2026-03-06T23:58:13.923+08:00  INFO 48956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-06T23:58:14.036+08:00  INFO 48956 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39f93225
+2026-03-06T23:58:14.038+08:00  INFO 48956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-06T23:58:14.115+08:00  INFO 48956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-06T23:58:14.120+08:00  INFO 48956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-07T00:07:06.462+08:00  INFO 28444 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 17.0.11 with PID 28444 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T00:07:06.480+08:00  INFO 28444 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T00:07:08.224+08:00  INFO 28444 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@ec50f54
+2026-03-07T00:07:08.334+08:00  INFO 28444 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 2.192 seconds (process running for 2.952)
+2026-03-07T00:07:08.937+08:00  INFO 28444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-07T00:07:09.051+08:00  INFO 28444 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65ef9a0a
+2026-03-07T00:07:09.052+08:00  INFO 28444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-07T00:07:09.107+08:00  INFO 28444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-07T00:07:09.112+08:00  INFO 28444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-07T00:07:15.992+08:00  INFO 50444 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 17.0.11 with PID 50444 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T00:07:15.994+08:00  INFO 50444 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T00:07:17.892+08:00  INFO 50444 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@ec50f54
+2026-03-07T00:07:18.003+08:00  INFO 50444 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 2.324 seconds (process running for 3.1)
+2026-03-07T00:07:18.682+08:00  INFO 50444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-07T00:07:18.797+08:00  INFO 50444 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c7375da
+2026-03-07T00:07:18.799+08:00  INFO 50444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-07T00:07:18.853+08:00  INFO 50444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-07T00:07:18.864+08:00  INFO 50444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-07T00:07:51.534+08:00  INFO 40344 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 17.0.11 with PID 40344 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T00:07:51.535+08:00  INFO 40344 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T00:07:53.360+08:00  INFO 40344 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@ec50f54
+2026-03-07T00:07:53.455+08:00  INFO 40344 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 2.255 seconds (process running for 3.006)
+2026-03-07T00:07:54.014+08:00  INFO 40344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-07T00:07:54.132+08:00  INFO 40344 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b50c21
+2026-03-07T00:07:54.134+08:00  INFO 40344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-07T00:07:54.172+08:00  INFO 40344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-07T00:07:54.178+08:00  INFO 40344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-07T00:08:46.747+08:00  INFO 49460 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 17.0.11 with PID 49460 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T00:08:46.748+08:00  INFO 49460 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T00:08:48.736+08:00  INFO 49460 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@ec50f54
+2026-03-07T00:08:48.831+08:00  INFO 49460 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 2.441 seconds (process running for 3.18)
+2026-03-07T00:08:49.419+08:00  INFO 49460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-07T00:08:49.534+08:00  INFO 49460 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79d14037
+2026-03-07T00:08:49.535+08:00  INFO 49460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-07T00:08:49.576+08:00  INFO 49460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-07T00:08:49.583+08:00  INFO 49460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
