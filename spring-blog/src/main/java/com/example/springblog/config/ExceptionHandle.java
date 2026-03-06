@@ -4,8 +4,10 @@ package com.example.springblog.config;
 import com.example.springblog.model.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 @Slf4j
+@ResponseBody
 @RestControllerAdvice
 public class ExceptionHandle {
     @ExceptionHandler
