@@ -41,7 +41,24 @@
     <script src="js/jquery.min.js"></script>
     <script>
         function login() {
-            location.assign("blog_list.html");
+            $.ajax({
+                type:"post",
+                url: "/user/login",
+                data:{
+                    username:$("#username").val(),
+                    password: $("#password").val()
+                },
+                success:function(result){
+                    if(result.code=="SUCCESS" && result.data !=null){
+                        //后端处理成功
+                        localStorage.setItem("user_token", result.data);
+                        //页面跳转
+                        location.href = "blog_list.html";
+                    }else{
+                        alert(result.errMsg);
+                    }
+                }
+            });
         }
     </script>
 </body>
