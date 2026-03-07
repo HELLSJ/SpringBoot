@@ -78,6 +78,38 @@
         function deleteBlog() {
             alert("删除博客");
         }
+
+                $.ajax({
+            type: "get",
+            url: "/blog/getBlogDetail" + location.search,
+            success: function (result) {
+                if (result.code == "SUCCESS") {
+                    //填充页面
+                    var blog = result.data;
+                    $(".content .title").text(blog.title);
+                    $(".content .date").text(blog.createTime);
+                    // $(".content .detail").text(blog.content);
+                    editormd.markdownToHTML("detail", {
+                        markdown: blog.content
+                    });
+                    //判断是否显示编辑/删除按钮
+                    if (blog.loginUser) {
+                        var html = "";
+                        html += '<button onclick="window.location.href=\'blog_update.html?blogId=' + blog.id + '\'">编辑</button>';
+                        html += '<button onclick="deleteBlog(' + blog.id + ')">删除</button>';
+                        $(".content .operating").html(html);
+                    }
+                }
+            },
+            error: function (error) {
+                if (error != null && error.status == 401) {
+                    location.href = "blog_login.html";
+                }
+            }
+        });
+
+        var url = "/user/getAuthorInfo" + location.search;
+        getUserInfo(url);
     </script>
 </body>
 

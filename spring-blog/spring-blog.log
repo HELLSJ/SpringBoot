@@ -1,94 +1,140 @@
-2026-03-06T22:35:43.916+08:00  INFO 21856 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 21856 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
-2026-03-06T22:35:43.917+08:00  INFO 21856 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2026-03-06T22:35:44.279+08:00  WARN 21856 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.springblog]' package. Please check your configuration.
-2026-03-06T22:35:44.444+08:00  INFO 21856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-03-06T22:35:44.452+08:00  INFO 21856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-06T22:35:44.453+08:00  INFO 21856 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-03-06T22:35:44.485+08:00  INFO 21856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-06T22:35:44.485+08:00  INFO 21856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 542 ms
-2026-03-06T22:35:44.770+08:00  INFO 21856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-03-06T22:35:44.777+08:00  INFO 21856 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.149 seconds (process running for 1.501)
-2026-03-06T22:35:49.024+08:00  INFO 21856 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-06T22:35:49.025+08:00  INFO 21856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-06T22:35:49.026+08:00  INFO 21856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-03-06T23:52:46.684+08:00  INFO 49712 --- [main] c.e.s.mapper.UserInfoMapperTest          : Starting UserInfoMapperTest using Java 17.0.11 with PID 49712 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
-2026-03-06T23:52:46.685+08:00  INFO 49712 --- [main] c.e.s.mapper.UserInfoMapperTest          : No active profile set, falling back to 1 default profile: "default"
-2026-03-06T23:52:48.553+08:00  INFO 49712 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@4a325eb9
-2026-03-06T23:52:48.655+08:00  INFO 49712 --- [main] c.e.s.mapper.UserInfoMapperTest          : Started UserInfoMapperTest in 2.278 seconds (process running for 3.182)
-2026-03-06T23:52:49.300+08:00  INFO 49712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-06T23:52:49.424+08:00  INFO 49712 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39f93225
-2026-03-06T23:52:49.426+08:00  INFO 49712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-06T23:52:49.587+08:00  INFO 49712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-06T23:52:49.595+08:00  INFO 49712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-06T23:54:26.701+08:00  INFO 40888 --- [main] c.e.s.mapper.UserInfoMapperTest          : Starting UserInfoMapperTest using Java 17.0.11 with PID 40888 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
-2026-03-06T23:54:26.702+08:00  INFO 40888 --- [main] c.e.s.mapper.UserInfoMapperTest          : No active profile set, falling back to 1 default profile: "default"
-2026-03-06T23:54:28.517+08:00  INFO 40888 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@ec50f54
-2026-03-06T23:54:28.624+08:00  INFO 40888 --- [main] c.e.s.mapper.UserInfoMapperTest          : Started UserInfoMapperTest in 2.249 seconds (process running for 3.065)
-2026-03-06T23:54:29.235+08:00  INFO 40888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-06T23:54:29.345+08:00  INFO 40888 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e8bccfb
-2026-03-06T23:54:29.346+08:00  INFO 40888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-06T23:54:29.496+08:00  INFO 40888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-06T23:54:29.508+08:00  INFO 40888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-06T23:54:52.922+08:00  INFO 31212 --- [main] c.e.s.mapper.UserInfoMapperTest          : Starting UserInfoMapperTest using Java 17.0.11 with PID 31212 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
-2026-03-06T23:54:52.923+08:00  INFO 31212 --- [main] c.e.s.mapper.UserInfoMapperTest          : No active profile set, falling back to 1 default profile: "default"
-2026-03-06T23:54:54.702+08:00  INFO 31212 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@1654a892
-2026-03-06T23:54:54.800+08:00  INFO 31212 --- [main] c.e.s.mapper.UserInfoMapperTest          : Started UserInfoMapperTest in 2.173 seconds (process running for 2.95)
-2026-03-06T23:54:55.447+08:00  INFO 31212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-06T23:54:55.559+08:00  INFO 31212 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50785f86
-2026-03-06T23:54:55.561+08:00  INFO 31212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-06T23:54:55.619+08:00  INFO 31212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-06T23:54:55.625+08:00  INFO 31212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-06T23:55:28.658+08:00  INFO 28244 --- [main] c.e.s.mapper.UserInfoMapperTest          : Starting UserInfoMapperTest using Java 17.0.11 with PID 28244 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
-2026-03-06T23:55:28.659+08:00  INFO 28244 --- [main] c.e.s.mapper.UserInfoMapperTest          : No active profile set, falling back to 1 default profile: "default"
-2026-03-06T23:55:30.631+08:00  INFO 28244 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@1654a892
-2026-03-06T23:55:30.726+08:00  INFO 28244 --- [main] c.e.s.mapper.UserInfoMapperTest          : Started UserInfoMapperTest in 2.368 seconds (process running for 3.123)
-2026-03-06T23:55:31.336+08:00  INFO 28244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-06T23:55:31.459+08:00  INFO 28244 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e258d3b
-2026-03-06T23:55:31.460+08:00  INFO 28244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-06T23:55:31.511+08:00  INFO 28244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-06T23:55:31.516+08:00  INFO 28244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-06T23:58:11.476+08:00  INFO 48956 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 17.0.11 with PID 48956 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
-2026-03-06T23:58:11.477+08:00  INFO 48956 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
-2026-03-06T23:58:13.235+08:00  INFO 48956 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@6c000e0c
-2026-03-06T23:58:13.314+08:00  INFO 48956 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 2.136 seconds (process running for 2.873)
-2026-03-06T23:58:13.923+08:00  INFO 48956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-06T23:58:14.036+08:00  INFO 48956 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39f93225
-2026-03-06T23:58:14.038+08:00  INFO 48956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-06T23:58:14.115+08:00  INFO 48956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-06T23:58:14.120+08:00  INFO 48956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-07T00:07:06.462+08:00  INFO 28444 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 17.0.11 with PID 28444 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
-2026-03-07T00:07:06.480+08:00  INFO 28444 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
-2026-03-07T00:07:08.224+08:00  INFO 28444 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@ec50f54
-2026-03-07T00:07:08.334+08:00  INFO 28444 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 2.192 seconds (process running for 2.952)
-2026-03-07T00:07:08.937+08:00  INFO 28444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-07T00:07:09.051+08:00  INFO 28444 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65ef9a0a
-2026-03-07T00:07:09.052+08:00  INFO 28444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-07T00:07:09.107+08:00  INFO 28444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-07T00:07:09.112+08:00  INFO 28444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-07T00:07:15.992+08:00  INFO 50444 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 17.0.11 with PID 50444 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
-2026-03-07T00:07:15.994+08:00  INFO 50444 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
-2026-03-07T00:07:17.892+08:00  INFO 50444 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@ec50f54
-2026-03-07T00:07:18.003+08:00  INFO 50444 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 2.324 seconds (process running for 3.1)
-2026-03-07T00:07:18.682+08:00  INFO 50444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-07T00:07:18.797+08:00  INFO 50444 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c7375da
-2026-03-07T00:07:18.799+08:00  INFO 50444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-07T00:07:18.853+08:00  INFO 50444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-07T00:07:18.864+08:00  INFO 50444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-07T00:07:51.534+08:00  INFO 40344 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 17.0.11 with PID 40344 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
-2026-03-07T00:07:51.535+08:00  INFO 40344 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
-2026-03-07T00:07:53.360+08:00  INFO 40344 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@ec50f54
-2026-03-07T00:07:53.455+08:00  INFO 40344 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 2.255 seconds (process running for 3.006)
-2026-03-07T00:07:54.014+08:00  INFO 40344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-07T00:07:54.132+08:00  INFO 40344 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b50c21
-2026-03-07T00:07:54.134+08:00  INFO 40344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-07T00:07:54.172+08:00  INFO 40344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-07T00:07:54.178+08:00  INFO 40344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-07T00:08:46.747+08:00  INFO 49460 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 17.0.11 with PID 49460 (started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
-2026-03-07T00:08:46.748+08:00  INFO 49460 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
-2026-03-07T00:08:48.736+08:00  INFO 49460 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@ec50f54
-2026-03-07T00:08:48.831+08:00  INFO 49460 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 2.441 seconds (process running for 3.18)
-2026-03-07T00:08:49.419+08:00  INFO 49460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-07T00:08:49.534+08:00  INFO 49460 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79d14037
-2026-03-07T00:08:49.535+08:00  INFO 49460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-07T00:08:49.576+08:00  INFO 49460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-07T00:08:49.583+08:00  INFO 49460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-07T00:16:56.511+08:00  INFO 21856 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-07T00:16:56.663+08:00  INFO 21856 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-07T00:16:59.495+08:00  INFO 40364 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 40364 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T00:16:59.497+08:00  INFO 40364 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T00:17:00.061+08:00  INFO 40364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-07T00:17:00.068+08:00  INFO 40364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-07T00:17:00.069+08:00  INFO 40364 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-07T00:17:00.095+08:00  INFO 40364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-07T00:17:00.095+08:00  INFO 40364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 573 ms
+2026-03-07T00:17:00.472+08:00  INFO 40364 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c18016b
+2026-03-07T00:17:00.545+08:00  INFO 40364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-07T00:17:00.552+08:00  INFO 40364 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.341 seconds (process running for 1.66)
+2026-03-07T00:18:10.199+08:00  INFO 40364 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-07T00:18:10.201+08:00  INFO 40364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-07T00:18:10.202+08:00  INFO 40364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-07T00:18:10.224+08:00 ERROR 40364 --- [http-nio-8080-exec-1] c.e.springblog.config.ExceptionHandle    : 发生异常，e:org.springframework.web.servlet.resource.NoResourceFoundException: No static resource blog/getList.
+2026-03-07T00:19:13.337+08:00  INFO 40364 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-07T00:19:13.508+08:00  INFO 40364 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-07T00:19:16.767+08:00  INFO 48304 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 48304 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T00:19:16.768+08:00  INFO 48304 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T00:19:17.328+08:00  INFO 48304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-07T00:19:17.336+08:00  INFO 48304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-07T00:19:17.336+08:00  INFO 48304 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-07T00:19:17.365+08:00  INFO 48304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-07T00:19:17.365+08:00  INFO 48304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 568 ms
+2026-03-07T00:19:17.719+08:00  INFO 48304 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c18016b
+2026-03-07T00:19:17.780+08:00  INFO 48304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-07T00:19:17.786+08:00  INFO 48304 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.308 seconds (process running for 1.613)
+2026-03-07T00:19:22.474+08:00  INFO 48304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-07T00:19:22.474+08:00  INFO 48304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-07T00:19:22.475+08:00  INFO 48304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-07T00:19:22.490+08:00  INFO 48304 --- [http-nio-8080-exec-1] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-07T00:19:22.498+08:00  INFO 48304 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-07T00:19:22.578+08:00  INFO 48304 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bb2a03e
+2026-03-07T00:19:22.583+08:00  INFO 48304 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-07T10:16:38.916+08:00  INFO 3044 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 3044 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T10:16:38.917+08:00  INFO 3044 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T10:16:39.614+08:00  INFO 3044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-07T10:16:39.622+08:00  INFO 3044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-07T10:16:39.623+08:00  INFO 3044 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-07T10:16:39.654+08:00  INFO 3044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-07T10:16:39.654+08:00  INFO 3044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 708 ms
+2026-03-07T10:16:40.100+08:00  INFO 3044 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c18016b
+2026-03-07T10:16:40.180+08:00  INFO 3044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-07T10:16:40.187+08:00  INFO 3044 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.623 seconds (process running for 2.062)
+2026-03-07T10:16:42.181+08:00  INFO 3044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-07T10:16:42.182+08:00  INFO 3044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-07T10:16:42.182+08:00  INFO 3044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-07T10:16:42.199+08:00  INFO 3044 --- [http-nio-8080-exec-1] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-07T10:16:42.210+08:00  INFO 3044 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-07T10:16:42.317+08:00  INFO 3044 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e24372e
+2026-03-07T10:16:42.321+08:00  INFO 3044 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-07T10:16:42.448+08:00 ERROR 3044 --- [http-nio-8080-exec-5] c.e.springblog.config.ExceptionHandle    : 发生异常，e:org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+2026-03-07T10:45:09.409+08:00  INFO 3044 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-07T10:45:09.703+08:00  INFO 3044 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-07T10:45:09.722+08:00  INFO 3044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-07T10:45:09.726+08:00  INFO 3044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-07T10:45:13.282+08:00  INFO 28464 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 28464 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T10:45:13.284+08:00  INFO 28464 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T10:45:13.890+08:00  INFO 28464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-07T10:45:13.898+08:00  INFO 28464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-07T10:45:13.898+08:00  INFO 28464 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-07T10:45:13.927+08:00  INFO 28464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-07T10:45:13.928+08:00  INFO 28464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 616 ms
+2026-03-07T10:45:14.320+08:00  INFO 28464 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c18016b
+2026-03-07T10:45:14.388+08:00  INFO 28464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-07T10:45:14.394+08:00  INFO 28464 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.448 seconds (process running for 1.81)
+2026-03-07T10:45:15.761+08:00  INFO 28464 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-07T10:45:15.761+08:00  INFO 28464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-07T10:45:15.761+08:00  INFO 28464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-07T10:45:15.780+08:00 ERROR 28464 --- [http-nio-8080-exec-1] c.e.springblog.config.ExceptionHandle    : 发生异常，e:org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+2026-03-07T10:45:25.851+08:00 ERROR 28464 --- [http-nio-8080-exec-3] c.e.springblog.config.ExceptionHandle    : 发生异常，e:org.springframework.web.servlet.resource.NoResourceFoundException: No static resource blog/blog_list.html.
+2026-03-07T10:45:25.882+08:00 ERROR 28464 --- [http-nio-8080-exec-2] c.e.springblog.config.ExceptionHandle    : 发生异常，e:org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+2026-03-07T10:45:39.673+08:00 ERROR 28464 --- [http-nio-8080-exec-9] c.e.springblog.config.ExceptionHandle    : 发生异常，e:org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+2026-03-07T10:45:39.679+08:00  INFO 28464 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-07T10:45:39.691+08:00  INFO 28464 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-07T10:45:39.815+08:00  INFO 28464 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33082e2a
+2026-03-07T10:45:39.816+08:00  INFO 28464 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-07T10:47:57.108+08:00  INFO 28464 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-07T10:47:57.259+08:00  INFO 28464 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-07T10:47:57.261+08:00  INFO 28464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-07T10:47:57.264+08:00  INFO 28464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-07T10:48:00.245+08:00  INFO 16904 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 16904 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T10:48:00.246+08:00  INFO 16904 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T10:48:00.813+08:00  INFO 16904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-07T10:48:00.819+08:00  INFO 16904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-07T10:48:00.819+08:00  INFO 16904 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-07T10:48:00.843+08:00  INFO 16904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-07T10:48:00.844+08:00  INFO 16904 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 574 ms
+2026-03-07T10:48:01.193+08:00  INFO 16904 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c18016b
+2026-03-07T10:48:01.258+08:00  INFO 16904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-07T10:48:01.264+08:00  INFO 16904 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.297 seconds (process running for 1.607)
+2026-03-07T10:52:50.150+08:00  INFO 16904 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-07T10:52:50.315+08:00  INFO 16904 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-07T10:52:52.122+08:00  INFO 30920 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 30920 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T10:52:52.124+08:00  INFO 30920 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T10:52:52.698+08:00  INFO 30920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-07T10:52:52.707+08:00  INFO 30920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-07T10:52:52.707+08:00  INFO 30920 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-07T10:52:52.734+08:00  INFO 30920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-07T10:52:52.735+08:00  INFO 30920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 587 ms
+2026-03-07T10:52:53.088+08:00  INFO 30920 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c18016b
+2026-03-07T10:52:53.150+08:00  INFO 30920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-07T10:52:53.156+08:00  INFO 30920 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.318 seconds (process running for 1.635)
+2026-03-07T10:52:59.726+08:00  INFO 30920 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-07T10:52:59.726+08:00  INFO 30920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-07T10:52:59.727+08:00  INFO 30920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-07T10:52:59.775+08:00  INFO 30920 --- [http-nio-8080-exec-2] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-07T10:52:59.786+08:00  INFO 30920 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-07T10:52:59.867+08:00  INFO 30920 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@460d5211
+2026-03-07T10:52:59.869+08:00  INFO 30920 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-07T10:53:16.882+08:00  INFO 30920 --- [http-nio-8080-exec-9] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-07T10:54:38.415+08:00  INFO 30920 --- [http-nio-8080-exec-6] c.e.s.controller.BlogController          : getBlogDetail, blogId: null
+2026-03-07T10:54:47.864+08:00  INFO 30920 --- [http-nio-8080-exec-9] c.e.s.controller.BlogController          : getBlogDetail, blogId: null
+2026-03-07T10:55:00.792+08:00  INFO 30920 --- [http-nio-8080-exec-8] c.e.s.controller.BlogController          : getBlogDetail, blogId: 1
+2026-03-07T11:13:39.828+08:00  INFO 30920 --- [http-nio-8080-exec-5] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-07T11:13:41.903+08:00  INFO 30920 --- [http-nio-8080-exec-9] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-07T11:13:44.968+08:00  INFO 30920 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-07T11:13:45.241+08:00  INFO 30920 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-07T11:13:45.246+08:00  INFO 30920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-07T11:13:45.258+08:00  INFO 30920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-07T11:13:50.312+08:00  INFO 27060 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 27060 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-07T11:13:50.314+08:00  INFO 27060 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T11:13:50.859+08:00  INFO 27060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-07T11:13:50.867+08:00  INFO 27060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-07T11:13:50.868+08:00  INFO 27060 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-07T11:13:50.896+08:00  INFO 27060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-07T11:13:50.896+08:00  INFO 27060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 560 ms
+2026-03-07T11:13:51.248+08:00  INFO 27060 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c18016b
+2026-03-07T11:13:51.307+08:00  INFO 27060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-07T11:13:51.314+08:00  INFO 27060 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.284 seconds (process running for 1.586)
+2026-03-07T11:13:56.029+08:00  INFO 27060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-07T11:13:56.030+08:00  INFO 27060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-07T11:13:56.031+08:00  INFO 27060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-07T11:13:56.074+08:00  INFO 27060 --- [http-nio-8080-exec-2] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-07T11:13:56.083+08:00  INFO 27060 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-07T11:13:56.158+08:00  INFO 27060 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fe8e51d
+2026-03-07T11:13:56.160+08:00  INFO 27060 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-07T11:14:09.156+08:00  INFO 27060 --- [http-nio-8080-exec-4] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-07T11:35:17.586+08:00  INFO 27060 --- [http-nio-8080-exec-6] c.e.s.controller.BlogController          : 获取博客列表。。

@@ -37,21 +37,36 @@
             </div>
         </div>
         <div class="right">
-            <div class="blog">
-                <div class="title">我的第一篇博客</div>
-                <div class="date">2021-06-02</div>
-                <div class="desc">今天开始, 好好学习Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas nesciunt, hic voluptatum, dolorem quisquam modi accusantium, commodi dolores architecto ratione vel exercitationem optio. Facere repellendus autem, obcaecati dolore sequi incidunt?</div>
-                <a class="detail" href="blog_detail.html">查看全文&gt;&gt;</a>
-            </div>
-            <div class="blog">
-                <div class="title">我的第一篇博客</div>
-                <div class="date">2021-06-02</div>
-                <div class="desc">今天开始, 好好学习Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas nesciunt, hic voluptatum, dolorem quisquam modi accusantium, commodi dolores architecto ratione vel exercitationem optio. Facere repellendus autem, obcaecati dolore sequi incidunt?</div>
-                <a class="detail" href="blog_detail.html">查看全文&gt;&gt;</a>
-            </div>
+            
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        $.ajax({
+            type: "get",
+            url: "/blog/getList",
+            success: function(result){
+                if(result.code=="SUCCESS"){
+                    var blogs = result.data;
+                    var finalHtml = "";
+                    for(var blog of blogs){
+                        finalHtml +='<div class="blog">';
+                        finalHtml +='<div class="title">'+blog.title+'</div>';
+                        finalHtml +='<div class="date">'+blog.createTime+'</div>';
+                        finalHtml +='<div class="desc">'+blog.content+'</div>';
+                        finalHtml +='<a class="detail" href="blog_detail.html?blogId='+blog.id+'">查看全文&gt;&gt;</a>';
+                        finalHtml +='</div>';
+                    }
+                    $(".container .right").html(finalHtml);
+                }
+            },
+            error:function(error){
+                if(error!=null && error.status==401){
+                    location.href = "blog_login.html";
+                }
+            }
+        });
+    </script>
 </body>
 </html>

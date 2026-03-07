@@ -1,6 +1,7 @@
 package com.example.springblog.model;
 
 
+import com.example.springblog.utils.DateUtils;
 import lombok.Data;
 
 import java.util.Date;
@@ -14,4 +15,8 @@ public class BlogInfo {
     private Integer deleteFlag;
     private Date createTime;
     private Date updateTime;
+
+    public String getCreateTime() {
+        return DateUtils.dateFormat(createTime);
+    }
 }
