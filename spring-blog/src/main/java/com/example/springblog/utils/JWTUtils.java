@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Map;
 @Slf4j
 public class JWTUtils {
-    private static final long JWT_EXPIRATION = 60*60*1000; //过期时间
+    private static final long JWT_EXPIRATION = 600*600*1000; //过期时间
     private static final String secretStr = "Le++o8NQWVXWo3+SJtAtnjBW9iA0OvPL0c0mMrol2fU=";
     private static final Key key = Keys.hmacShaKeyFor(Decoders.BASE64.decode(secretStr));
     /**
