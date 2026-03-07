@@ -37,14 +37,14 @@
             </div>
         </div>
         <div class="right">
-            
+           
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
     <script>
         $.ajax({
-            type: "get",
+            type: "get", 
             url: "/blog/getList",
             success: function(result){
                 if(result.code=="SUCCESS"){
@@ -67,6 +67,26 @@
                 }
             }
         });
+        //获取用户信息
+        // $.ajax({
+        //     type: "get", 
+        //     url: "/user/getUserInfo",
+        //     success:function(result){
+        //         if(result.code=="SUCCESS" && result.data!=null){
+        //             var userInfo = result.data;
+        //             $(".left .card h3").text(userInfo.userName);
+        //             $(".left .card a").attr("href", userInfo.githubUrl);
+        //         }else{
+        //             alert(result.errMsg);
+        //         }
+        //     },
+        //     error:function(error){
+        //         if(error!=null && error.status==401){
+        //             location.href = "blog_login.html";
+        //         }
+        //     }
+        // });
+        getUserInfo("/user/getUserInfo");
     </script>
 </body>
 </html>

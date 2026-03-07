@@ -12,4 +12,8 @@ public class UserService {
     public UserInfo selectByName(String userName) {
         return userInfoMapper.selectByName(userName);
     }
+
+    public UserInfo selectById(Integer userId) {
+        return userInfoMapper.selectById(userId);
+    }
 }

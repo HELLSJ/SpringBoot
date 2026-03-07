@@ -1,5 +1,6 @@
 package com.example.springblog.utils;
 
+import com.example.springblog.constants.Constants;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
@@ -12,7 +13,7 @@ import java.util.Date;
 import java.util.Map;
 @Slf4j
 public class JWTUtils {
-    private static final long JWT_EXPIRATION = 600*600*1000; //过期时间
+    private static final long JWT_EXPIRATION = 60*60*1000; //过期时间
     private static final String secretStr = "Le++o8NQWVXWo3+SJtAtnjBW9iA0OvPL0c0mMrol2fU=";
     private static final Key key = Keys.hmacShaKeyFor(Decoders.BASE64.decode(secretStr));
     /**
@@ -40,6 +41,17 @@ public class JWTUtils {
             return null;
         }
         return claims;
+    }
+
+    public static Integer getIdByToken(String token){
+        Claims claims = parseToken(token);
+        if(claims != null){
+            Integer userId = (Integer) claims.get(Constants.TOKEN_ID);
+            if(userId>0){
+                return userId;
+            }
+        }
+        return null;
     }
 
 }
