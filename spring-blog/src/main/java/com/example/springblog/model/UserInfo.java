@@ -2,7 +2,6 @@ package com.example.springblog.model;
 
 import lombok.Data;
 
-import java.security.PrivateKey;
 import java.util.Date;
 
 @Data
@@ -11,6 +10,7 @@ public class UserInfo {
     private String userName;
     private String password;
     private String githubUrl;
+    private String avatar;
     private Integer deleteFlag;
     private Date createTime;
     private Date updateTime;

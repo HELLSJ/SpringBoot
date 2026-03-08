@@ -25,7 +25,7 @@ public class BlogController {
 
     @RequestMapping("/getList")
     public List<BlogInfo> getList(){
-        log.info("获取博客列表。。");
+        log.info("获取博客列表..");
         return blogService.getList();
     }
 
@@ -49,7 +49,7 @@ public class BlogController {
     //使用json来请求
     @RequestMapping("/add")
     public Boolean addBook(@RequestBody BlogInfo blogInfo, HttpServletRequest request){
-        log.info("添加图书,blogInfo:{}", blogInfo);
+        log.info("添加博客,blogInfo:{}", blogInfo);
         //参数校验
         if(!StringUtils.hasLength(blogInfo.getTitle()) || !StringUtils.hasLength(blogInfo.getContent())){
             return false;
@@ -61,6 +61,11 @@ public class BlogController {
         if(userId == null || userId<0){
             return false;
         }
+        //设置用户ID
+        blogInfo.setUserId(userId);
+        //设置创建时间和更新时间
+        blogInfo.setCreateTime(new java.util.Date());
+        blogInfo.setUpdateTime(new java.util.Date());
         blogService.insertBook(blogInfo);
         return true;
     }

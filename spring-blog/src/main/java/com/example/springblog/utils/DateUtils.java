@@ -5,6 +5,9 @@ import java.util.Date;
 
 public class DateUtils {
     public static String dateFormat(Date date){
+        if (date == null) {
+            return "";
+        }
         //2026-03-07 11:24
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         return simpleDateFormat.format(date);
