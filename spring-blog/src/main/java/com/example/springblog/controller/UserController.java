@@ -64,9 +64,14 @@ public class UserController {
         return userInfo;
     }
 
-//    @RequestMapping("/getAuthorInfo")
-//    public UserInfo getAuthorInfo(Integer blogId){
-//
-//    }
-
+    @RequestMapping("/getAuthorInfo")
+    public UserInfo getAuthorInfo(Integer blogId){
+        //1.根据博客ID，获取作者ID
+        //2.根据作者ID，获取作者信息
+        if(blogId<=0){
+            return null;
+        }
+        UserInfo userInfo = userService.getAuthorInfo(blogId);
+        return userInfo;
+    }
 }
