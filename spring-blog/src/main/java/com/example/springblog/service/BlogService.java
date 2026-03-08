@@ -33,4 +33,8 @@ public class BlogService {
         }
         return false;
     }
+
+    public Integer update(BlogInfo blogInfo) {
+        return blogMapper.updateBlog(blogInfo);//需要异常捕获
+    }
 }

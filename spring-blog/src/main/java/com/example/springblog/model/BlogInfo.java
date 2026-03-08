@@ -12,6 +12,7 @@ public class BlogInfo {
     private String title;
     private String content;
     private Integer userId;
+    private boolean isLoginUser;
     private Integer deleteFlag;
     private Date createTime;
     private Date updateTime;

@@ -30,9 +30,20 @@ public class BlogController {
     }
 
     @RequestMapping("/getBlogDetail")
-    public BlogInfo getBlogDetail(Integer blogId){
+    public BlogInfo getBlogDetail(Integer blogId, HttpServletRequest request){
         log.info("getBlogDetail, blogId: {}", blogId);
-        return blogService.getBlogDetail(blogId);
+        BlogInfo blogDetail = blogService.getBlogDetail(blogId);
+        //获取token
+        String token = request.getHeader(Constants.REQUEST_HEADER_TOKEN);
+        //从token中获取登录用户ID
+        Integer userId = JWTUtils.getIdByToken(token);
+        //判断作者是否为登录用户
+        if(userId != null && userId == blogDetail.getUserId()){
+            blogDetail.setLoginUser(true);
+        }else{
+            blogDetail.setLoginUser(false);
+        }
+        return blogDetail;
     }
 
     //使用json来请求
@@ -47,7 +58,35 @@ public class BlogController {
         //获取token
         String token = request.getHeader(Constants.REQUEST_HEADER_TOKEN);
         Integer userId = JWTUtils.getIdByToken(token);
+        if(userId == null || userId<0){
+            return false;
+        }
         blogService.insertBook(blogInfo);
+        return true;
+    }
+    @RequestMapping("/update")
+    public Boolean update(BlogInfo blogInfo){
+        log.info("更新博客, blogInfo:{}", blogInfo);
+        //参数校验
+        if(blogInfo.getId()==null
+                ||!StringUtils.hasLength(blogInfo.getTitle())
+                ||!StringUtils.hasLength(blogInfo.getContent())){
+            return false;
+        }
+        blogService.update(blogInfo);
+        return true;
+    }
+
+    @RequestMapping("/delete")
+    public Boolean delete(Integer blogId){
+        log.info("删除博客, blogId:{}", blogId);
+        if(blogId<=0){
+            return false;
+        }
+        BlogInfo blogInfo = new BlogInfo();
+        blogInfo.setId(blogId);
+        blogInfo.setDeleteFlag(1);//删除
+        blogService.update(blogInfo);
         return true;
     }
 }

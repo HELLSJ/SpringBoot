@@ -39,19 +39,70 @@
     <script src="js/common.js"></script>
     <script type="text/javascript">
 
-        $(function () {
-            var editor = editormd("editor", {
-                width  : "100%",
-                height : "550px",
-                path: "blog-editormd/lib/"
-            });
-        });
-        
+        // $(function () {
+        //     var editor = editormd("editor", {
+        //         width: "100%",
+        //         height: "550px",
+        //         path: "blog-editormd/lib/",
+
+        //     });
+        // });
+
         function submit() {
-           
+            $.ajax({
+                type: "post",
+                url: "/blog/update",
+                data: {
+                    id: $("#blogId").val(),
+                    title: $("#title").val(),
+                    content: $("#content").val()
+                },
+                success: function (result) {
+                    if (result.code == "SUCCESS" && result.data) {
+                        //删除成功
+                        location.href = "blog_list.html";
+                    } else {
+                        //后端未对错误情况进行分析, 统一返回了false
+                        alert(result.errMsg);
+                    }
+                },
+                error: function (error) {
+                    if (error != null && error.status == 401) {
+                        location.href = "blog_login.html";
+                    }
+                }
+            });
         }
         function getBlogInfo() {
-            
+            $.ajax({
+                type: "get",
+                url: "/blog/getBlogDetail" + location.search,
+                success: function (result) {
+                    if (result.code == "SUCCESS" && result.data != null) {
+                        var blog = result.data;
+                        $("#blogId").val(blog.id);
+                        $("#title").val(blog.title);
+                        // $("#content").val(blog.content);
+                        editormd("editor", {
+                            width: "100%",
+                            height: "550px",
+                            path: "blog-editormd/lib/",
+                            onload: function () {
+                                this.watch();
+                                this.setMarkdown(blog.content);
+                            }
+
+                        });
+                    } else {
+                        alert(result.errMsg)
+                    }
+                },
+                error: function (error) {
+                    if (error != null && error.status == 401) {
+                        location.href = "blog_login.html";
+                    }
+                }
+            });
         }
         getBlogInfo();
     </script>

@@ -979,3 +979,390 @@
 2026-03-08T13:06:26.640+08:00  INFO 17136 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
 2026-03-08T13:06:26.641+08:00 ERROR 17136 --- [http-nio-8080-exec-7] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
 2026-03-08T13:06:26.642+08:00  INFO 17136 --- [http-nio-8080-exec-1] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T13:15:17.755+08:00  INFO 17136 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-08T13:15:17.905+08:00  INFO 17136 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-08T13:15:17.908+08:00  INFO 17136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-08T13:15:17.912+08:00  INFO 17136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-08T13:15:21.125+08:00  INFO 33292 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 33292 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-08T13:15:21.127+08:00  INFO 33292 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-08T13:15:21.715+08:00  INFO 33292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-08T13:15:21.721+08:00  INFO 33292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-08T13:15:21.722+08:00  INFO 33292 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-08T13:15:21.752+08:00  INFO 33292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-08T13:15:21.753+08:00  INFO 33292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 603 ms
+2026-03-08T13:15:22.115+08:00  INFO 33292 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4189d70b
+2026-03-08T13:15:22.182+08:00  INFO 33292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-08T13:15:22.188+08:00  INFO 33292 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.342 seconds (process running for 1.67)
+2026-03-08T13:15:38.522+08:00  INFO 33292 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-08T13:15:38.523+08:00  INFO 33292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-08T13:15:38.528+08:00  INFO 33292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-08T13:15:38.546+08:00  INFO 33292 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:15:38.560+08:00 ERROR 33292 --- [http-nio-8080-exec-1] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:16:19.560+08:00  INFO 33292 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3MzI1NTM3MH0.WYVU4oF6W5sV8ZA6Cz_E16PIXNpsQx5CNk-QH1B3rgU
+2026-03-08T13:16:19.596+08:00 ERROR 33292 --- [http-nio-8080-exec-2] c.e.springblog.config.ExceptionHandle    : 文件不存在No static resource user/getBlogDetail.
+2026-03-08T13:16:31.166+08:00  INFO 33292 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:16:31.168+08:00 ERROR 33292 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:17:09.123+08:00  INFO 33292 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:17:09.124+08:00 ERROR 33292 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:17:20.061+08:00  INFO 33292 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T13:17:20.065+08:00 ERROR 33292 --- [http-nio-8080-exec-7] c.e.springblog.config.ExceptionHandle    : 文件不存在No static resource user/getBlogDetail.
+2026-03-08T13:17:32.052+08:00  INFO 33292 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:17:32.054+08:00 ERROR 33292 --- [http-nio-8080-exec-6] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:17:32.103+08:00  INFO 33292 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:17:32.105+08:00 ERROR 33292 --- [http-nio-8080-exec-8] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:17:33.964+08:00  INFO 33292 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-08T13:17:34.092+08:00  INFO 33292 --- [http-nio-8080-exec-9] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@381e36b1
+2026-03-08T13:17:34.095+08:00  INFO 33292 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-08T13:17:34.181+08:00  INFO 33292 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:17:34.183+08:00 ERROR 33292 --- [http-nio-8080-exec-1] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:17:34.209+08:00  INFO 33292 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MDY1NH0.kK4dAyFZVyxls0Pe-xa-4rnutooDA9KfY2T_KOEZrqA
+2026-03-08T13:17:34.210+08:00  INFO 33292 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MDY1NH0.kK4dAyFZVyxls0Pe-xa-4rnutooDA9KfY2T_KOEZrqA
+2026-03-08T13:17:34.211+08:00  INFO 33292 --- [http-nio-8080-exec-2] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T13:17:34.222+08:00  INFO 33292 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:17:34.223+08:00 ERROR 33292 --- [http-nio-8080-exec-4] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:17:53.236+08:00  INFO 33292 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T13:17:53.242+08:00 ERROR 33292 --- [http-nio-8080-exec-5] c.e.springblog.config.ExceptionHandle    : 文件不存在No static resource user/getBlogDetail.
+2026-03-08T13:18:17.858+08:00  INFO 33292 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:18:17.860+08:00 ERROR 33292 --- [http-nio-8080-exec-7] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:18:33.807+08:00  INFO 33292 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:18:33.809+08:00 ERROR 33292 --- [http-nio-8080-exec-6] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:18:42.441+08:00  INFO 33292 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T13:18:42.443+08:00  INFO 33292 --- [http-nio-8080-exec-1] c.e.s.controller.BlogController          : getBlogDetail, blogId: 1
+2026-03-08T13:23:56.736+08:00  INFO 33292 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T13:23:56.739+08:00  INFO 33292 --- [http-nio-8080-exec-2] c.e.s.controller.BlogController          : getBlogDetail, blogId: 2
+2026-03-08T13:24:01.567+08:00  INFO 33292 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T13:24:01.569+08:00  INFO 33292 --- [http-nio-8080-exec-4] c.e.s.controller.BlogController          : getBlogDetail, blogId: 1
+2026-03-08T13:24:05.660+08:00  INFO 33292 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T13:24:05.662+08:00  INFO 33292 --- [http-nio-8080-exec-5] c.e.s.controller.BlogController          : getBlogDetail, blogId: 3
+2026-03-08T13:24:09.926+08:00  INFO 33292 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T13:24:09.928+08:00  INFO 33292 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : getBlogDetail, blogId: 4
+2026-03-08T13:24:13.564+08:00  INFO 33292 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T13:24:13.565+08:00  INFO 33292 --- [http-nio-8080-exec-6] c.e.s.controller.BlogController          : getBlogDetail, blogId: 5
+2026-03-08T13:24:18.187+08:00  INFO 33292 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T13:24:18.189+08:00  INFO 33292 --- [http-nio-8080-exec-8] c.e.s.controller.BlogController          : getBlogDetail, blogId: 6
+2026-03-08T13:24:18.192+08:00 ERROR 33292 --- [http-nio-8080-exec-8] c.e.springblog.config.ExceptionHandle    : 发生异常，e:java.lang.NullPointerException: Cannot invoke "com.example.springblog.model.BlogInfo.getUserId()" because "blogDetail" is null
+2026-03-08T13:27:38.491+08:00  INFO 33292 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:38.497+08:00 ERROR 33292 --- [http-nio-8080-exec-1] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:38.533+08:00  INFO 33292 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MDY1NH0.kK4dAyFZVyxls0Pe-xa-4rnutooDA9KfY2T_KOEZrqA
+2026-03-08T13:27:38.533+08:00  INFO 33292 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MDY1NH0.kK4dAyFZVyxls0Pe-xa-4rnutooDA9KfY2T_KOEZrqA
+2026-03-08T13:27:38.534+08:00  INFO 33292 --- [http-nio-8080-exec-2] c.e.s.controller.BlogController          : getBlogDetail, blogId: 2
+2026-03-08T13:27:38.540+08:00  INFO 33292 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MDY1NH0.kK4dAyFZVyxls0Pe-xa-4rnutooDA9KfY2T_KOEZrqA
+2026-03-08T13:27:38.544+08:00  INFO 33292 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:38.544+08:00 ERROR 33292 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:39.211+08:00  INFO 33292 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:39.212+08:00 ERROR 33292 --- [http-nio-8080-exec-6] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:39.357+08:00  INFO 33292 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:39.358+08:00 ERROR 33292 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:41.480+08:00  INFO 33292 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:41.481+08:00  INFO 33292 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:41.482+08:00 ERROR 33292 --- [http-nio-8080-exec-1] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:41.482+08:00 ERROR 33292 --- [http-nio-8080-exec-8] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:41.489+08:00  INFO 33292 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:41.494+08:00 ERROR 33292 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:44.766+08:00  INFO 33292 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:44.769+08:00 ERROR 33292 --- [http-nio-8080-exec-2] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:44.789+08:00  INFO 33292 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:44.791+08:00 ERROR 33292 --- [http-nio-8080-exec-10] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:47.051+08:00  INFO 33292 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:47.052+08:00 ERROR 33292 --- [http-nio-8080-exec-4] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:47.070+08:00  INFO 33292 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MTI2N30.ADPED2lFOc_gUqriF0RqHCdGDHU7zHfNCBR6WBQ9Krc
+2026-03-08T13:27:47.070+08:00  INFO 33292 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MTI2N30.ADPED2lFOc_gUqriF0RqHCdGDHU7zHfNCBR6WBQ9Krc
+2026-03-08T13:27:47.071+08:00  INFO 33292 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T13:27:47.072+08:00 ERROR 33292 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T13:27:47.072+08:00  INFO 33292 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:14:24.033+08:00  INFO 33292 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-08T16:14:24.382+08:00  INFO 33292 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-08T16:14:24.386+08:00  INFO 33292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-08T16:14:24.389+08:00  INFO 33292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-08T16:14:29.776+08:00  INFO 10000 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 10000 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-08T16:14:29.778+08:00  INFO 10000 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-08T16:14:30.383+08:00  INFO 10000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-08T16:14:30.390+08:00  INFO 10000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-08T16:14:30.390+08:00  INFO 10000 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-08T16:14:30.423+08:00  INFO 10000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-08T16:14:30.424+08:00  INFO 10000 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 621 ms
+2026-03-08T16:14:30.794+08:00  INFO 10000 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4189d70b
+2026-03-08T16:14:30.856+08:00  INFO 10000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-08T16:14:30.864+08:00  INFO 10000 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.386 seconds (process running for 1.698)
+2026-03-08T16:14:35.367+08:00  INFO 10000 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-08T16:14:35.368+08:00  INFO 10000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-08T16:14:35.368+08:00  INFO 10000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-08T16:14:35.408+08:00  INFO 10000 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:35.420+08:00 ERROR 10000 --- [http-nio-8080-exec-7] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:35.453+08:00  INFO 10000 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MTI2N30.ADPED2lFOc_gUqriF0RqHCdGDHU7zHfNCBR6WBQ9Krc
+2026-03-08T16:14:35.453+08:00  INFO 10000 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MTI2N30.ADPED2lFOc_gUqriF0RqHCdGDHU7zHfNCBR6WBQ9Krc
+2026-03-08T16:14:35.463+08:00  INFO 10000 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:35.464+08:00 ERROR 10000 --- [http-nio-8080-exec-8] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:35.490+08:00 ERROR 10000 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MTI2N30.ADPED2lFOc_gUqriF0RqHCdGDHU7zHfNCBR6WBQ9Krc
+2026-03-08T16:14:35.490+08:00 ERROR 10000 --- [http-nio-8080-exec-6] com.example.springblog.utils.JWTUtils    : 解析token失败, token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MTI2N30.ADPED2lFOc_gUqriF0RqHCdGDHU7zHfNCBR6WBQ9Krc
+2026-03-08T16:14:35.494+08:00  INFO 10000 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MTI2N30.ADPED2lFOc_gUqriF0RqHCdGDHU7zHfNCBR6WBQ9Krc
+2026-03-08T16:14:35.495+08:00 ERROR 10000 --- [http-nio-8080-exec-4] com.example.springblog.utils.JWTUtils    : 解析token失败, token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk1MTI2N30.ADPED2lFOc_gUqriF0RqHCdGDHU7zHfNCBR6WBQ9Krc
+2026-03-08T16:14:35.570+08:00  INFO 10000 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:35.571+08:00 ERROR 10000 --- [http-nio-8080-exec-10] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:35.612+08:00  INFO 10000 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:35.614+08:00 ERROR 10000 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:37.416+08:00  INFO 10000 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-08T16:14:37.521+08:00  INFO 10000 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cbe60b8
+2026-03-08T16:14:37.522+08:00  INFO 10000 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-08T16:14:37.631+08:00  INFO 10000 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:37.633+08:00 ERROR 10000 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:37.649+08:00  INFO 10000 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:37.649+08:00  INFO 10000 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:37.652+08:00  INFO 10000 --- [http-nio-8080-exec-8] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:14:37.663+08:00  INFO 10000 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:37.665+08:00 ERROR 10000 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:38.481+08:00  INFO 10000 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:38.482+08:00 ERROR 10000 --- [http-nio-8080-exec-4] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:38.505+08:00  INFO 10000 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:38.505+08:00  INFO 10000 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:38.507+08:00  INFO 10000 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:38.509+08:00 ERROR 10000 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:38.510+08:00  INFO 10000 --- [http-nio-8080-exec-10] c.e.s.controller.BlogController          : getBlogDetail, blogId: 4
+2026-03-08T16:14:38.516+08:00  INFO 10000 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:40.281+08:00  INFO 10000 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:40.283+08:00  INFO 10000 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : 删除博客, blogId:4
+2026-03-08T16:14:40.359+08:00  INFO 10000 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:40.362+08:00 ERROR 10000 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:40.375+08:00  INFO 10000 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:40.375+08:00  INFO 10000 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:40.375+08:00  INFO 10000 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:40.377+08:00 ERROR 10000 --- [http-nio-8080-exec-8] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:40.377+08:00  INFO 10000 --- [http-nio-8080-exec-6] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:14:44.756+08:00  INFO 10000 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:44.757+08:00 ERROR 10000 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:44.781+08:00  INFO 10000 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:44.781+08:00  INFO 10000 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:44.783+08:00  INFO 10000 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:44.784+08:00  INFO 10000 --- [http-nio-8080-exec-10] c.e.s.controller.BlogController          : getBlogDetail, blogId: 5
+2026-03-08T16:14:44.784+08:00 ERROR 10000 --- [http-nio-8080-exec-1] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:44.789+08:00  INFO 10000 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:50.449+08:00  INFO 10000 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:50.454+08:00 ERROR 10000 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:14:50.469+08:00  INFO 10000 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:50.469+08:00  INFO 10000 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:14:50.469+08:00  INFO 10000 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:14:50.472+08:00  INFO 10000 --- [http-nio-8080-exec-8] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:14:50.472+08:00 ERROR 10000 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:15:36.506+08:00  INFO 10000 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:15:36.508+08:00 ERROR 10000 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:15:36.530+08:00  INFO 10000 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:15:36.530+08:00  INFO 10000 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:15:36.530+08:00  INFO 10000 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:15:36.531+08:00 ERROR 10000 --- [http-nio-8080-exec-2] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:15:36.531+08:00  INFO 10000 --- [http-nio-8080-exec-10] c.e.s.controller.BlogController          : getBlogDetail, blogId: 5
+2026-03-08T16:15:36.536+08:00  INFO 10000 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:15:46.011+08:00  INFO 10000 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:15:46.012+08:00 ERROR 10000 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:15:46.106+08:00  INFO 10000 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:15:46.107+08:00 ERROR 10000 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:39:32.375+08:00  INFO 10000 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:39:32.376+08:00 ERROR 10000 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:39:32.398+08:00  INFO 10000 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:39:32.400+08:00  INFO 10000 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:39:32.401+08:00  INFO 10000 --- [http-nio-8080-exec-2] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:39:32.413+08:00  INFO 10000 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:39:32.414+08:00 ERROR 10000 --- [http-nio-8080-exec-10] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:39:33.682+08:00  INFO 10000 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:39:33.683+08:00 ERROR 10000 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:39:33.730+08:00  INFO 10000 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:39:33.730+08:00  INFO 10000 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:39:33.731+08:00  INFO 10000 --- [http-nio-8080-exec-6] c.e.s.controller.BlogController          : getBlogDetail, blogId: 5
+2026-03-08T16:39:33.734+08:00  INFO 10000 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:39:33.745+08:00  INFO 10000 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:39:33.745+08:00 ERROR 10000 --- [http-nio-8080-exec-4] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:39:38.804+08:00  INFO 10000 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:39:38.806+08:00  INFO 10000 --- [http-nio-8080-exec-9] c.e.s.controller.BlogController          : 删除博客, blogId:5
+2026-03-08T16:39:38.862+08:00  INFO 10000 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:39:38.862+08:00 ERROR 10000 --- [http-nio-8080-exec-1] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:39:38.878+08:00  INFO 10000 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:39:38.878+08:00  INFO 10000 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:39:38.879+08:00  INFO 10000 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:39:38.879+08:00 ERROR 10000 --- [http-nio-8080-exec-7] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:39:38.880+08:00  INFO 10000 --- [http-nio-8080-exec-2] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:40:09.244+08:00  INFO 10000 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:40:09.246+08:00 ERROR 10000 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:40:09.264+08:00  INFO 10000 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:40:09.264+08:00  INFO 10000 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:40:09.264+08:00  INFO 10000 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:40:09.266+08:00  INFO 10000 --- [http-nio-8080-exec-8] c.e.s.controller.BlogController          : getBlogDetail, blogId: 2
+2026-03-08T16:40:09.266+08:00 ERROR 10000 --- [http-nio-8080-exec-4] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:40:09.272+08:00  INFO 10000 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:41:00.387+08:00  INFO 10000 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-08T16:41:00.572+08:00  INFO 10000 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-08T16:41:00.574+08:00  INFO 10000 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-08T16:41:00.576+08:00  INFO 10000 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-08T16:41:02.638+08:00  INFO 25208 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 25208 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-08T16:41:02.640+08:00  INFO 25208 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-08T16:41:03.217+08:00  INFO 25208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-08T16:41:03.223+08:00  INFO 25208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-08T16:41:03.223+08:00  INFO 25208 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-08T16:41:03.254+08:00  INFO 25208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-08T16:41:03.254+08:00  INFO 25208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 592 ms
+2026-03-08T16:41:03.602+08:00  INFO 25208 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4189d70b
+2026-03-08T16:41:03.665+08:00  INFO 25208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-08T16:41:03.671+08:00  INFO 25208 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.324 seconds (process running for 1.671)
+2026-03-08T16:41:09.732+08:00  INFO 25208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-08T16:41:09.733+08:00  INFO 25208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-08T16:41:09.734+08:00  INFO 25208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-08T16:41:09.749+08:00  INFO 25208 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:41:09.761+08:00 ERROR 25208 --- [http-nio-8080-exec-1] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:41:09.788+08:00  INFO 25208 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:41:09.789+08:00 ERROR 25208 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:41:17.360+08:00  INFO 25208 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:41:17.362+08:00 ERROR 25208 --- [http-nio-8080-exec-2] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:41:19.014+08:00  INFO 25208 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:41:19.014+08:00  INFO 25208 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2MTI3N30.yW9_zG2Qmg1kyAObSkLf5ds_AGO3xlTHreTMmoWo890
+2026-03-08T16:41:19.028+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:41:19.029+08:00 ERROR 25208 --- [http-nio-8080-exec-7] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:41:19.058+08:00  INFO 25208 --- [http-nio-8080-exec-5] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:41:19.077+08:00  INFO 25208 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-08T16:41:19.204+08:00  INFO 25208 --- [http-nio-8080-exec-6] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57d8551c
+2026-03-08T16:41:19.206+08:00  INFO 25208 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-08T16:41:21.896+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:41:21.899+08:00 ERROR 25208 --- [http-nio-8080-exec-8] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:41:23.479+08:00  INFO 25208 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjg4M30.CICwT6tfeQBlMRuTdqch01G96u3Pfq8trUKmj0hPdtY
+2026-03-08T16:41:23.479+08:00  INFO 25208 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjg4M30.CICwT6tfeQBlMRuTdqch01G96u3Pfq8trUKmj0hPdtY
+2026-03-08T16:41:23.480+08:00  INFO 25208 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:41:23.485+08:00  INFO 25208 --- [http-nio-8080-exec-10] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:41:23.487+08:00 ERROR 25208 --- [http-nio-8080-exec-1] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:41:24.615+08:00  INFO 25208 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjg4M30.CICwT6tfeQBlMRuTdqch01G96u3Pfq8trUKmj0hPdtY
+2026-03-08T16:41:24.618+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjg4M30.CICwT6tfeQBlMRuTdqch01G96u3Pfq8trUKmj0hPdtY
+2026-03-08T16:41:24.620+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : getBlogDetail, blogId: 1
+2026-03-08T16:41:24.624+08:00  INFO 25208 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjg4M30.CICwT6tfeQBlMRuTdqch01G96u3Pfq8trUKmj0hPdtY
+2026-03-08T16:41:24.627+08:00  INFO 25208 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:41:24.629+08:00 ERROR 25208 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:41:25.911+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:41:25.914+08:00 ERROR 25208 --- [http-nio-8080-exec-8] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:42:43.372+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:42:43.373+08:00 ERROR 25208 --- [http-nio-8080-exec-8] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:42:44.892+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:42:44.892+08:00  INFO 25208 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:42:44.895+08:00  INFO 25208 --- [http-nio-8080-exec-2] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:42:44.906+08:00  INFO 25208 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:42:44.907+08:00 ERROR 25208 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:42:46.548+08:00  INFO 25208 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:42:46.548+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:42:46.550+08:00  INFO 25208 --- [http-nio-8080-exec-1] c.e.s.controller.BlogController          : getBlogDetail, blogId: 1
+2026-03-08T16:42:46.555+08:00  INFO 25208 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:42:46.559+08:00  INFO 25208 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:42:46.561+08:00 ERROR 25208 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:42:47.678+08:00  INFO 25208 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:42:47.680+08:00  INFO 25208 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:42:47.681+08:00  INFO 25208 --- [http-nio-8080-exec-9] c.e.s.controller.BlogController          : getBlogDetail, blogId: null
+2026-03-08T16:42:47.684+08:00 ERROR 25208 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:42:47.693+08:00 ERROR 25208 --- [http-nio-8080-exec-9] c.e.springblog.config.ExceptionHandle    : 发生异常，e:java.lang.NullPointerException: Cannot invoke "com.example.springblog.model.BlogInfo.getUserId()" because "blogDetail" is null
+2026-03-08T16:45:22.245+08:00  INFO 25208 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:45:22.245+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:45:22.245+08:00  INFO 25208 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:45:22.246+08:00 ERROR 25208 --- [http-nio-8080-exec-6] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:45:22.247+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:45:23.362+08:00  INFO 25208 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:45:23.362+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:45:23.362+08:00  INFO 25208 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:45:23.363+08:00 ERROR 25208 --- [http-nio-8080-exec-4] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:45:23.363+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : getBlogDetail, blogId: 2
+2026-03-08T16:45:23.366+08:00  INFO 25208 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:45:24.333+08:00  INFO 25208 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:45:24.333+08:00  INFO 25208 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:45:24.334+08:00 ERROR 25208 --- [http-nio-8080-exec-2] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:45:24.334+08:00  INFO 25208 --- [http-nio-8080-exec-5] c.e.s.controller.BlogController          : getBlogDetail, blogId: null
+2026-03-08T16:45:24.337+08:00 ERROR 25208 --- [http-nio-8080-exec-5] c.e.springblog.config.ExceptionHandle    : 发生异常，e:java.lang.NullPointerException: Cannot invoke "com.example.springblog.model.BlogInfo.getUserId()" because "blogDetail" is null
+2026-03-08T16:45:26.147+08:00  INFO 25208 --- [http-nio-8080-exec-6] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:45:26.148+08:00  INFO 25208 --- [http-nio-8080-exec-6] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:45:26.149+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:45:26.148+08:00  INFO 25208 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:45:26.151+08:00 ERROR 25208 --- [http-nio-8080-exec-10] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:45:26.761+08:00  INFO 25208 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:45:26.762+08:00  INFO 25208 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:45:26.764+08:00  INFO 25208 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:45:26.764+08:00  INFO 25208 --- [http-nio-8080-exec-4] c.e.s.controller.BlogController          : getBlogDetail, blogId: 1
+2026-03-08T16:45:26.765+08:00 ERROR 25208 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:45:26.767+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:46:53.224+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:46:53.224+08:00  INFO 25208 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:46:53.225+08:00 ERROR 25208 --- [http-nio-8080-exec-8] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:46:53.225+08:00  INFO 25208 --- [http-nio-8080-exec-9] c.e.s.controller.BlogController          : getBlogDetail, blogId: null
+2026-03-08T16:46:53.228+08:00 ERROR 25208 --- [http-nio-8080-exec-9] c.e.springblog.config.ExceptionHandle    : 发生异常，e:java.lang.NullPointerException: Cannot invoke "com.example.springblog.model.BlogInfo.getUserId()" because "blogDetail" is null
+2026-03-08T16:47:29.784+08:00  INFO 25208 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T16:47:29.787+08:00 ERROR 25208 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk0OTc4M30.mKi7yfqOfZ34kf-jJ6zIS859zcEEgq-JdaiuS3VuAIo
+2026-03-08T16:47:39.664+08:00  INFO 25208 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:47:39.665+08:00 ERROR 25208 --- [http-nio-8080-exec-4] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:47:48.066+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2Mjk2NH0.Om4ZyHW0vCUf87qVEeWaQ7ugrjBVBBYYuX-fRsQB2pM
+2026-03-08T16:47:48.068+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : getBlogDetail, blogId: 1
+2026-03-08T16:48:20.477+08:00  INFO 25208 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:48:20.478+08:00 ERROR 25208 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:48:30.167+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:48:30.167+08:00  INFO 25208 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:48:30.171+08:00  INFO 25208 --- [http-nio-8080-exec-10] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:48:30.180+08:00  INFO 25208 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:48:30.183+08:00 ERROR 25208 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:48:31.506+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:48:31.506+08:00  INFO 25208 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:48:31.508+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.controller.BlogController          : getBlogDetail, blogId: 1
+2026-03-08T16:48:31.512+08:00  INFO 25208 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:48:31.516+08:00  INFO 25208 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:48:31.517+08:00 ERROR 25208 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:48:32.229+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:48:32.230+08:00  INFO 25208 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:48:32.231+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : getBlogDetail, blogId: 1
+2026-03-08T16:48:32.231+08:00 ERROR 25208 --- [http-nio-8080-exec-1] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:49:03.522+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:49:03.528+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : 更新博客, blogInfo:[FAILED toString()]
+2026-03-08T16:49:03.610+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:49:03.611+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:49:03.612+08:00  INFO 25208 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:49:03.615+08:00  INFO 25208 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:49:03.618+08:00 ERROR 25208 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:58:09.531+08:00  INFO 25208 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:58:09.531+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:58:09.539+08:00  INFO 25208 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : getBlogDetail, blogId: 1
+2026-03-08T16:58:09.539+08:00  INFO 25208 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:58:09.541+08:00  INFO 25208 --- [http-nio-8080-exec-9] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:58:09.542+08:00 ERROR 25208 --- [http-nio-8080-exec-9] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T16:58:19.748+08:00  INFO 25208 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:58:19.748+08:00  INFO 25208 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T16:58:19.748+08:00  INFO 25208 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T16:58:19.751+08:00  INFO 25208 --- [http-nio-8080-exec-10] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T16:58:19.754+08:00 ERROR 25208 --- [http-nio-8080-exec-2] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T17:57:28.262+08:00  INFO 25208 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-08T17:57:28.458+08:00  INFO 25208 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-08T17:57:28.464+08:00  INFO 25208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-08T17:57:28.470+08:00  INFO 25208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-08T17:57:30.518+08:00  INFO 26940 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 17.0.11 with PID 26940 (C:\Users\86156\Desktop\后端代码springboot\spring-blog\target\classes started by 86156 in C:\Users\86156\Desktop\后端代码springboot\spring-blog)
+2026-03-08T17:57:30.520+08:00  INFO 26940 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-03-08T17:57:31.172+08:00  INFO 26940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-08T17:57:31.178+08:00  INFO 26940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-08T17:57:31.178+08:00  INFO 26940 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-08T17:57:31.215+08:00  INFO 26940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-08T17:57:31.216+08:00  INFO 26940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 670 ms
+2026-03-08T17:57:31.635+08:00  INFO 26940 --- [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4189d70b
+2026-03-08T17:57:31.700+08:00  INFO 26940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-08T17:57:31.707+08:00  INFO 26940 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.524 seconds (process running for 1.862)
+2026-03-08T17:57:34.561+08:00  INFO 26940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-08T17:57:34.561+08:00  INFO 26940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-08T17:57:34.562+08:00  INFO 26940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-08T17:57:34.613+08:00  INFO 26940 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T17:57:34.613+08:00  INFO 26940 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T17:57:34.635+08:00  INFO 26940 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T17:57:34.638+08:00 ERROR 26940 --- [http-nio-8080-exec-3] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T17:57:34.668+08:00 ERROR 26940 --- [http-nio-8080-exec-7] com.example.springblog.utils.JWTUtils    : 解析token失败, token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T17:57:34.668+08:00 ERROR 26940 --- [http-nio-8080-exec-4] com.example.springblog.utils.JWTUtils    : 解析token失败, token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlck5hbWUiOiJ6aGFuZ3NhbiIsImV4cCI6MTc3Mjk2MzMxMH0.auHQV0g_a5jHEEP6yUfjDrlveFYENOecqwGKfPy6ToQ
+2026-03-08T17:57:34.747+08:00  INFO 26940 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T17:57:34.749+08:00 ERROR 26940 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T17:57:38.556+08:00  INFO 26940 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-08T17:57:38.709+08:00  INFO 26940 --- [http-nio-8080-exec-6] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a4e6e5e
+2026-03-08T17:57:38.711+08:00  INFO 26940 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-08T17:57:38.845+08:00  INFO 26940 --- [http-nio-8080-exec-8] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2NzQ1OH0.BAmsipsnlEPOO3vzf20rGM_21uYq_ZNdNpy5t5nFSYI
+2026-03-08T17:57:38.847+08:00  INFO 26940 --- [http-nio-8080-exec-2] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2NzQ1OH0.BAmsipsnlEPOO3vzf20rGM_21uYq_ZNdNpy5t5nFSYI
+2026-03-08T17:57:38.849+08:00  INFO 26940 --- [http-nio-8080-exec-2] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T17:57:38.849+08:00  INFO 26940 --- [http-nio-8080-exec-10] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T17:57:38.850+08:00 ERROR 26940 --- [http-nio-8080-exec-10] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T17:57:40.356+08:00  INFO 26940 --- [http-nio-8080-exec-1] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T17:57:40.360+08:00 ERROR 26940 --- [http-nio-8080-exec-1] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null
+2026-03-08T17:57:50.149+08:00  INFO 26940 --- [http-nio-8080-exec-3] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2NzQ1OH0.BAmsipsnlEPOO3vzf20rGM_21uYq_ZNdNpy5t5nFSYI
+2026-03-08T17:57:50.171+08:00  INFO 26940 --- [http-nio-8080-exec-3] c.e.s.controller.BlogController          : 添加图书,blogInfo:[FAILED toString()]
+2026-03-08T17:57:50.253+08:00  INFO 26940 --- [http-nio-8080-exec-7] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2NzQ1OH0.BAmsipsnlEPOO3vzf20rGM_21uYq_ZNdNpy5t5nFSYI
+2026-03-08T17:57:50.253+08:00  INFO 26940 --- [http-nio-8080-exec-4] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywidXNlck5hbWUiOiJhZG1pbiIsImV4cCI6MTc3Mjk2NzQ1OH0.BAmsipsnlEPOO3vzf20rGM_21uYq_ZNdNpy5t5nFSYI
+2026-03-08T17:57:50.253+08:00  INFO 26940 --- [http-nio-8080-exec-5] c.e.s.interceptor.LoginInterceptor       : 从header中获取token:null
+2026-03-08T17:57:50.256+08:00  INFO 26940 --- [http-nio-8080-exec-7] c.e.s.controller.BlogController          : 获取博客列表。。
+2026-03-08T17:57:50.256+08:00 ERROR 26940 --- [http-nio-8080-exec-5] com.example.springblog.utils.JWTUtils    : 解析token失败, token:null

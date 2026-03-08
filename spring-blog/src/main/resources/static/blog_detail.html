@@ -26,7 +26,7 @@
         <div class="left">
             <div class="card">
                 <img src="pic/doge.jpg" alt="">
-                <h3>比特汤老师</h3>
+                <h3>特殊位置</h3>
                 <a href="#">GitHub 地址</a>
                 <div class="row">
                     <span>文章</span>
@@ -65,8 +65,29 @@
         var userUrl = "/user/getAuthorInfo" + location.search;
         getUserInfo(userUrl);
 
-        function deleteBlog() {
-            alert("删除博客");
+        function deleteBlog(blogId) {
+            if (confirm("确定删除?")) {
+                $.ajax({
+                    type: "post",
+                    url: "/blog/delete" + location.search,
+                    success: function (result) {
+                        if (result.code == "SUCCESS" && result.data) {
+                            //删除成功
+                            location.href = "blog_list.html";
+                        } else {
+                            //后端未对错误情况进行分析, 统一返回了false
+                            alert(result.errMsg);
+                        }
+                    },
+                    error: function (error) {
+                        if (error != null && error.status == 401) {
+                            location.href = "blog_login.html";
+                        }
+                    }
+
+                });
+            }
+
         }
 
         $.ajax({
