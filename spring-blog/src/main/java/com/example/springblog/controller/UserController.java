@@ -5,6 +5,7 @@ import com.example.springblog.model.Result;
 import com.example.springblog.model.UserInfo;
 import com.example.springblog.service.UserService;
 import com.example.springblog.utils.JWTUtils;
+import com.example.springblog.utils.SecurityUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
@@ -22,17 +23,25 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping("/login")
-    public Result login(String username, String password) {
-        if (!StringUtils.hasLength(username) || !StringUtils.hasLength(password)) {
+    public Result login(String username, String password){
+        //1.参数校验
+        //2.校验密码是否正确
+        //3.密码正确
+        //4.密码错误，返回错误信息
+        if(!StringUtils.hasLength(username)||!StringUtils.hasLength(password)){
             return Result.fail("账号或密码不能为空");
         }
+        //从数据库中查找用户
         UserInfo userInfo = userService.selectByName(username);
+        //用户不存在
         if (userInfo == null) {
             return Result.fail("用户不存在");
         }
-        if (!password.equals(userInfo.getPassword())) {
+        //密码错误
+        if (!SecurityUtils.verify(password, userInfo.getPassword())) {
             return Result.fail("密码错误");
         }
+        //密码正确，返回token
         Map<String, Object> claim = new HashMap<>();
         claim.put(Constants.TOKEN_ID, userInfo.getId());
         claim.put(Constants.TOKEN_USERNAME, userInfo.getUserName());
@@ -98,12 +107,16 @@ public class UserController {
 
     /**
      * 获取当前登录用户信息
+     * @return
      */
     @RequestMapping("/getUserInfo")
-    public UserInfo getUserInfo(HttpServletRequest request) {
+    public UserInfo getUserInfo(HttpServletRequest request){
+        //获取token
         String token = request.getHeader(Constants.REQUEST_HEADER_TOKEN);
+        //从token中获取登录用户ID
         Integer userId = JWTUtils.getIdByToken(token);
-        if (userId == null) {
+        if(userId==null){
+            //用户未登录
             return null;
         }
         UserInfo userInfo = userService.selectById(userId);
@@ -111,8 +124,10 @@ public class UserController {
     }
 
     @RequestMapping("/getAuthorInfo")
-    public UserInfo getAuthorInfo(Integer blogId) {
-        if (blogId <= 0) {
+    public UserInfo getAuthorInfo(Integer blogId){
+        //1.根据博客ID，获取作者ID
+        //2.根据作者ID，获取作者信息
+        if(blogId<=0){
             return null;
         }
         UserInfo userInfo = userService.getAuthorInfo(blogId);
